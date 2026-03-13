@@ -1,2 +1,4 @@
 node_modules/
 analyze_site.js
+package.json
+package-lock.json
