@@ -85,7 +85,7 @@ class SubgroupsParser(BaseParser):
                         continue
 
                     # Capture URL from link inside Ill-No cell
-                    url_match = re.match(r'\s+- /url:\s+(http://catcar\.info/.+)', cell_line)
+                    url_match = re.match(r'\s+- /url:\s+(https?://(?:www\.)?catcar\.info/.+)', cell_line)
                     if url_match and cell_url is None:
                         cell_url = url_match.group(1).strip()
 

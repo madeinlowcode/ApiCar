@@ -19,9 +19,10 @@ class CategoriesParser(BaseParser):
         n = len(lines)
 
         # Pattern for category links: link text has "Name Name" pattern
-        # Handle both old format with [ref=eXX] [cursor=pointer] and new clean format
+        # Handle both old format (with [ref=eXX] [cursor=pointer]) and new clean format.
+        # Categories can appear at root level (no indentation) or indented.
         link_pattern = re.compile(
-            r'\s+- link "(.+?)"(?:\s+\[.*?\])*:'
+            r'\s*- link "(.+?)"(?:\s+\[.*?\])*:'
         )
 
         i = 0
@@ -36,15 +37,15 @@ class CategoriesParser(BaseParser):
                 has_img = False
                 for j in range(i + 1, min(i + 6, n)):
                     child = lines[j]
-                    # Check for /url pointing to catcar.info
-                    url_match = re.match(r'\s+- /url:\s+(http://catcar\.info/.+)', child)
+                    # Check for /url pointing to catcar.info (with or without www)
+                    url_match = re.match(r'\s+- /url:\s+(https?://(?:www\.)?catcar\.info/.+)', child)
                     if url_match:
                         url = url_match.group(1).strip()
                     # Check for img child (with or without attributes)
                     if re.match(r'\s+- img\b', child):
                         has_img = True
                     # Stop if we hit another top-level sibling (same or lower indent)
-                    if j > i + 1 and re.match(r'\s+- (?:link|heading|table|generic\b)', child):
+                    if j > i + 1 and re.match(r'\s*- (?:link|heading|table|generic\b)', child):
                         # Check indent - if same level as original link, stop
                         link_indent = len(line) - len(line.lstrip())
                         child_indent = len(child) - len(child.lstrip())

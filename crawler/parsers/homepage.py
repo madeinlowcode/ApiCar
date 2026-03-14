@@ -3,21 +3,19 @@ import re
 from crawler.parsers.base import BaseParser
 from crawler.validators.brand import ParsedBrand
 
-# Region headings on the catcar.info homepage (may appear in Russian or English)
+# Region headings on the catcar.info homepage (Russian and English)
 REGION_HEADINGS = {
     "Европа": "Europe", "Europe": "Europe",
     "Япония": "Japan", "Japan": "Japan",
     "Корея": "Korea", "Korea": "Korea",
     "США": "USA", "USA": "USA",
-    "Общие": "General", "Multi brands": "General",
 }
 
-# Skip these link names — they are not car brands
-SKIP_NAMES = {
-    "CATCAR Aftermarket", "Genuine USA parts", "Aftermarket USA parts",
-    "Connect CatCar catalogs", "On-line car parts catalogs", "Read more",
-    "CATCAR Moto Parts",
-}
+# Skip these regions entirely (aftermarket, moto, etc.)
+SKIP_REGIONS = {"Общие", "General", "Multi brands"}
+
+# Catalog paths to skip (non-brand catalogs)
+SKIP_PATHS = {"/totalcatalog/", "/moto/", "/usa_oem/", "/usa_noem/", "/en/"}
 
 
 class HomepageParser(BaseParser):
@@ -25,39 +23,45 @@ class HomepageParser(BaseParser):
         """
         Parse the homepage ARIA snapshot to extract brand name and URL pairs.
 
-        The ARIA snapshot format from Playwright:
-            - link "BrandName":
-              - /url: /path/?l=...
-
-        Brands are inside listitem elements under region headings.
+        Brands appear under region headings (Europe, Japan, Korea, USA).
+        Each brand is a link inside a listitem with a catalog URL like /bmw/ or /audivw/?l=...
         """
         results = []
         seen_names = set()
-        current_region = "Europe"
+        current_region = None
+        skip_region = False
 
         lines = page_content.split('\n')
         n = len(lines)
 
-        # Brand URLs match catalog paths like /audivw/?l=... or /bmw/?l=...
-        brand_url_pattern = re.compile(r'^/[a-zA-Z][a-zA-Z0-9_-]+/\?')
+        # Brand URLs: catalog path like /audivw/, /bmw/, /mercedes/, etc.
+        # May or may not have query params
+        brand_url_pattern = re.compile(r'^/[a-zA-Z][a-zA-Z0-9_-]+/')
 
         i = 0
         while i < n:
             line = lines[i]
 
-            # Check for region heading
+            # Check for region heading (level 2 is main content, level 5 is footer)
             heading_match = re.match(r'\s*- heading "([^"]+)"', line)
             if heading_match:
                 heading_text = heading_match.group(1)
-                if heading_text in REGION_HEADINGS:
+                if heading_text in SKIP_REGIONS:
+                    skip_region = True
+                elif heading_text in REGION_HEADINGS:
                     current_region = REGION_HEADINGS[heading_text]
+                    skip_region = False
+
+            if skip_region or current_region is None:
+                i += 1
+                continue
 
             # Look for link "Name": (with or without [ref=...] [cursor=pointer])
             link_match = re.match(
-                r'(\s+)- link "([^"]+)"(?:\s+\[.*?\])*:', line
+                r'\s+- link "([^"]+)"(?:\s+\[.*?\])*:', line
             )
             if link_match:
-                name = link_match.group(2)
+                name = link_match.group(1)
 
                 # Find /url within the next few lines
                 url = None
@@ -66,17 +70,17 @@ class HomepageParser(BaseParser):
                     if url_match:
                         candidate_url = url_match.group(1).strip()
                         if brand_url_pattern.match(candidate_url):
-                            url = candidate_url
+                            # Skip known non-brand catalog paths
+                            path_match = re.match(r'^(/[a-zA-Z][a-zA-Z0-9_-]+/)', candidate_url)
+                            if path_match and path_match.group(1) not in SKIP_PATHS:
+                                url = candidate_url
                         break
 
-                if url and name not in seen_names:
-                    # Extract just the brand name (remove Russian/other translations)
-                    # Format: "Audi Ауди" -> "Audi" or "Volkswagen Фольксваген" -> "Volkswagen"
+                if url:
                     clean_name = self._extract_latin_name(name)
 
-                    if clean_name and clean_name not in SKIP_NAMES and clean_name not in seen_names:
+                    if clean_name and clean_name not in seen_names:
                         seen_names.add(clean_name)
-                        # Extract catalog path from URL
                         path_match = re.match(r'^(/[a-zA-Z][a-zA-Z0-9_-]+/)', url)
                         catalog_path = path_match.group(1) if path_match else "/"
 
@@ -91,14 +95,24 @@ class HomepageParser(BaseParser):
 
         return results
 
+    @staticmethod
+    def _is_cyrillic_word(word: str) -> bool:
+        """Check if a word is primarily Cyrillic characters."""
+        cyrillic_count = sum(1 for c in word if '\u0400' <= c <= '\u04FF')
+        return cyrillic_count > len(word) // 2
+
     def _extract_latin_name(self, name: str) -> str:
-        """Extract the Latin/English brand name from mixed text like 'Audi Ауди'."""
-        # Split and take parts that are ASCII/Latin
+        """Extract the Latin/English brand name from mixed text like 'Audi Ауди'.
+
+        Handles special chars like ё in Citroёn by filtering out fully-Cyrillic words.
+        """
         parts = name.split()
-        latin_parts = [p for p in parts if all(c.isascii() for c in p)]
-        if latin_parts:
-            return " ".join(latin_parts)
-        # If no Latin parts, return original (some brands may have only non-Latin)
+        non_cyrillic = [p for p in parts if not self._is_cyrillic_word(p)]
+        if non_cyrillic:
+            result = " ".join(non_cyrillic)
+            # Normalize Cyrillic ё (U+0451) to Latin ë (U+00EB) in brand names
+            result = result.replace('\u0451', '\u00EB').replace('\u0401', '\u00CB')
+            return result
         return name
 
     def get_validator(self) -> type:

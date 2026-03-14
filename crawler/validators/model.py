@@ -9,6 +9,7 @@ class ParsedModel(BaseModel):
     production_date: str
     description: Optional[str] = None
     markets: Optional[str] = None
+    market: str = "Europe"
 
     @field_validator("code")
     @classmethod

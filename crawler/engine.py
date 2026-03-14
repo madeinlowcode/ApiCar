@@ -5,6 +5,7 @@ from crawler.browser import BrowserPool
 from crawler.rate_limiter import RateLimiter, RateLimitConfig
 from crawler.state import CrawlStateManager
 from crawler.utils import generate_content_hash, ensure_english_url
+from shared.models.crawl_queue import CrawlQueue
 from crawler.parsers.homepage import HomepageParser
 from crawler.parsers.brand_models import BrandModelsParser
 from crawler.parsers.model_years import ModelYearsParser
@@ -243,6 +244,49 @@ class CrawlEngine:
 
         return saved
 
+    async def _enqueue_market_tabs(self, session, content: str, queue_item):
+        """Extract market tab URLs from a brand page and enqueue unseen ones.
+
+        When visiting a brand page (level 2), the page shows models for one market
+        and has tabs linking to other markets (Europe, USA, Brazil, etc.).
+        We enqueue those extra market URLs as additional level 2 items so the
+        crawler processes all markets.
+        """
+        from sqlalchemy import select as sa_select
+
+        parser = BrandModelsParser()
+        tabs = parser.extract_market_tabs(content)
+        if not tabs:
+            return
+
+        # Find URLs already in the queue for this job at level 2
+        result = await session.execute(
+            sa_select(CrawlQueue.url).where(
+                CrawlQueue.job_id == queue_item.job_id,
+                CrawlQueue.level == 2,
+            )
+        )
+        existing_urls = {row[0] for row in result.all()}
+
+        brand_id = queue_item.parent_brand_id
+        new_tabs = []
+        for tab in tabs:
+            url = ensure_english_url(tab["url"])
+            if url not in existing_urls and tab["url"] not in existing_urls:
+                new_tabs.append({
+                    "url": url,
+                    "parent_brand_id": brand_id,
+                })
+
+        if new_tabs:
+            await self.state.enqueue_urls(queue_item.job_id, new_tabs, 2)
+            logger.info(
+                "crawl.market_tabs_enqueued",
+                count=len(new_tabs),
+                brand_id=brand_id,
+                markets=[t["name"] for t in tabs],
+            )
+
     async def process_url(self, queue_item) -> bool:
         """Process a single URL from the queue.
 
@@ -271,8 +315,11 @@ class CrawlEngine:
                 content = await page.locator("body").aria_snapshot()
                 content_hash = generate_content_hash(content)
 
-                # Parse the page
-                raw_data = await parser.parse(content)
+                # Parse the page (BrandModelsParser needs URL for market detection)
+                if queue_item.level == 2:
+                    raw_data = await parser.parse(content, page_url=nav_url)
+                else:
+                    raw_data = await parser.parse(content)
 
                 # Validate each item
                 validator = parser.get_validator()
@@ -321,6 +368,13 @@ class CrawlEngine:
                             "crawl.children_enqueued",
                             count=len(child_urls),
                             level=child_level,
+                        )
+
+                    # For level 2 (brand models): enqueue other market tab URLs
+                    # so all markets are crawled, not just the default one
+                    if queue_item.level == 2:
+                        await self._enqueue_market_tabs(
+                            session, content, queue_item
                         )
 
                     await self.state.mark_done(queue_item.id)
