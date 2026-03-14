@@ -262,10 +262,12 @@ class CrawlEngine:
                 page = await self.browser.acquire()
 
                 logger.info("crawl.navigating", url=queue_item.url[:80], level=queue_item.level)
-                await page.goto(queue_item.url, wait_until="networkidle", timeout=30000)
+                await page.goto(queue_item.url, wait_until="domcontentloaded", timeout=60000)
+                # Wait extra for JS rendering
+                await page.wait_for_timeout(5000)
 
-                # Get page content for parsing and hashing
-                content = await page.content()
+                # Get ARIA snapshot for parsing (parsers expect this YAML-like format)
+                content = await page.locator("body").aria_snapshot()
                 content_hash = generate_content_hash(content)
 
                 # Parse the page

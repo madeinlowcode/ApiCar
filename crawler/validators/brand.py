@@ -4,6 +4,8 @@ from pydantic import BaseModel, field_validator
 class ParsedBrand(BaseModel):
     name: str
     url: str
+    region: str = "Europe"
+    catalog_path: str = "/"
 
     @field_validator("name")
     @classmethod

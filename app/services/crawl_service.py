@@ -3,6 +3,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from shared.models.brand import Brand
 from shared.models.crawl_job import CrawlJob
+from shared.config import settings
 
 
 class CrawlService:
@@ -50,24 +51,46 @@ class CrawlService:
 
     @staticmethod
     async def trigger_crawl(db: AsyncSession, redis, brand_slug: str = None):
+        from shared.models.crawl_queue import CrawlQueue
+
         brand_id = None
+        start_level = 1
+        start_url = "https://www.catcar.info/"
+        parent_kwargs = {}
+
         if brand_slug:
             result = await db.execute(select(Brand).where(Brand.slug == brand_slug))
             brand = result.scalar_one_or_none()
             if brand is None:
                 raise ValueError(f"Brand with slug '{brand_slug}' not found")
             brand_id = brand.id
+            start_level = 2
+            start_url = brand.catalog_url
+            parent_kwargs = {"parent_brand_id": brand.id}
 
         job = CrawlJob(
             brand_id=brand_id,
-            level=0,
+            level=start_level,
             status="pending",
-            progress={},
         )
         db.add(job)
         await db.flush()
 
-        await redis.enqueue_job("process_crawl_job", job.id)
+        queue_item = CrawlQueue(
+            job_id=job.id,
+            url=start_url,
+            level=start_level,
+            status="pending",
+            **parent_kwargs,
+        )
+        db.add(queue_item)
+        await db.flush()
+
+        from arq import create_pool as arq_create_pool
+        from arq.connections import RedisSettings
+        arq_redis = await arq_create_pool(RedisSettings.from_dsn(settings.REDIS_URL))
+        await arq_redis.enqueue_job("process_crawl_job", job.id)
+        await arq_redis.close()
 
         await db.commit()
 
@@ -75,4 +98,5 @@ class CrawlService:
             "id": job.id,
             "status": job.status,
             "brand_slug": brand_slug,
+            "level": start_level,
         }

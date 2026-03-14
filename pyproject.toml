@@ -9,6 +9,7 @@ dependencies = [
     "pydantic-settings>=2.0",
     "structlog>=24.0",
     "redis>=5.0",
+    "alembic>=1.13",
 ]
 
 [project.optional-dependencies]
@@ -16,6 +17,7 @@ api = [
     "fastapi>=0.110",
     "uvicorn[standard]>=0.29",
     "slowapi>=0.1",
+    "arq>=0.26",
 ]
 crawler = [
     "playwright>=1.44",
