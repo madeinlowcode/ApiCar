@@ -64,5 +64,6 @@ class WorkerSettings:
     functions = [process_crawl_job, start_brand_crawl]
     redis_settings = RedisSettings.from_dsn(settings.REDIS_URL)
     max_jobs = 1
-    job_timeout = 300  # 5 minutes per URL
+    job_timeout = 3600  # 1 hour — crawl jobs process many URLs in a loop
+    max_tries = 3
     health_check_interval = 30

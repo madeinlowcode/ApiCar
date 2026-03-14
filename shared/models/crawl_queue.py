@@ -49,6 +49,10 @@ class CrawlQueue(TimestampMixin, Base):
     job = relationship("CrawlJob", back_populates="queue_items")
 
     __table_args__ = (
+        # NOTE: num_nonnulls() is a PostgreSQL-specific function.
+        # This constraint ensures at most one parent FK is set per row.
+        # It will NOT be enforced on SQLite (used in tests); SQLite simply
+        # ignores unknown functions inside CHECK constraints.
         CheckConstraint(
             "num_nonnulls(parent_brand_id, parent_model_id, parent_year_id, "
             "parent_category_id, parent_subgroup_id) <= 1",

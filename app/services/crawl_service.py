@@ -1,6 +1,7 @@
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
+from shared.models.brand import Brand
 from shared.models.crawl_job import CrawlJob
 
 
@@ -47,5 +48,31 @@ class CrawlService:
 
         return {"items": items}
 
-    async def trigger_crawl(self, brand_slug: str = None):
-        raise NotImplementedError
+    @staticmethod
+    async def trigger_crawl(db: AsyncSession, redis, brand_slug: str = None):
+        brand_id = None
+        if brand_slug:
+            result = await db.execute(select(Brand).where(Brand.slug == brand_slug))
+            brand = result.scalar_one_or_none()
+            if brand is None:
+                raise ValueError(f"Brand with slug '{brand_slug}' not found")
+            brand_id = brand.id
+
+        job = CrawlJob(
+            brand_id=brand_id,
+            level=0,
+            status="pending",
+            progress={},
+        )
+        db.add(job)
+        await db.flush()
+
+        await redis.enqueue_job("process_crawl_job", job.id)
+
+        await db.commit()
+
+        return {
+            "id": job.id,
+            "status": job.status,
+            "brand_slug": brand_slug,
+        }

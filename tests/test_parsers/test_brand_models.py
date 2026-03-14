@@ -13,7 +13,7 @@ Sample rows extracted from snapshot:
   - code=PA,  name="Passat/Variant/Santana", prod_date="1974-...", markets="A;B;C;D;E;G;L;P;S;W;X;Y;Z;9"
 
 The page also lists markets in a side list (Europe, South Africa, USA, etc.).
-Total model rows in the snapshot: 44
+Total model rows in the snapshot: 57
 """
 
 import pytest
@@ -88,11 +88,11 @@ class TestBrandModelsParserFields:
 
 
 class TestBrandModelsParserCount:
-    async def test_parses_44_models(self, snapshot_content):
-        """The VW models snapshot contains 44 model rows."""
+    async def test_parses_57_models(self, snapshot_content):
+        """The VW models snapshot contains 57 model rows."""
         parser = BrandModelsParser()
         result = await parser.parse(snapshot_content)
-        assert len(result) == 44, f"Expected 44 models, got {len(result)}"
+        assert len(result) == 57, f"Expected 57 models, got {len(result)}"
 
 
 class TestBrandModelsParserSpecificModels:

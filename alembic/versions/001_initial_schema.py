@@ -293,6 +293,12 @@ def upgrade() -> None:
             server_default=sa.text("now()"),
             nullable=False,
         ),
+        sa.Column(
+            "updated_at",
+            sa.DateTime(timezone=True),
+            server_default=sa.text("now()"),
+            nullable=False,
+        ),
         sa.Column("processed_at", sa.DateTime(timezone=True), nullable=True),
         sa.CheckConstraint(
             "num_nonnulls(parent_brand_id, parent_model_id, parent_year_id, "

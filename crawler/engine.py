@@ -43,7 +43,7 @@ class CrawlEngine:
 
         Returns list of dicts with 'id', 'url' and parent FK info for enqueuing children.
         """
-        from sqlalchemy import select as sa_select
+        from sqlalchemy import select as sa_select, func
         from shared.models import Brand, Market, Model, ModelYear, PartsCategory, Subgroup, Part
         from crawler.utils import slugify
 
@@ -127,8 +127,8 @@ class CrawlEngine:
                     sa_select(ModelYear).where(
                         ModelYear.model_id == model_id,
                         ModelYear.year == item["year"],
-                        # Match NULL restriction as empty string for comparison
-                        ModelYear.restriction == restriction,
+                        # Match NULL restriction as empty string to align with COALESCE index
+                        func.coalesce(ModelYear.restriction, '') == (restriction or ''),
                     )
                 )
                 my = result.scalar_one_or_none()
@@ -214,7 +214,7 @@ class CrawlEngine:
                     sa_select(Part).where(
                         Part.subgroup_id == subgroup_id,
                         Part.part_number == part_number,
-                        Part.position == position,
+                        func.coalesce(Part.position, '') == (position or ''),
                     )
                 )
                 part = result.scalar_one_or_none()
