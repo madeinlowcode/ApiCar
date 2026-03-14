@@ -22,6 +22,16 @@ def generate_content_hash(content: str) -> str:
     return hashlib.sha256(content.encode("utf-8")).hexdigest()
 
 
+def ensure_english_url(url: str) -> str:
+    """Ensure the URL has lang=en parameter so the site renders in English."""
+    from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
+    parsed = urlparse(url)
+    params = parse_qs(parsed.query)
+    params["lang"] = ["en"]
+    new_query = urlencode(params, doseq=True)
+    return urlunparse(parsed._replace(query=new_query))
+
+
 def slugify(text: str) -> str:
     """Convert text to URL-friendly slug."""
     import re

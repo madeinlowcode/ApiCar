@@ -4,7 +4,7 @@ import structlog
 from crawler.browser import BrowserPool
 from crawler.rate_limiter import RateLimiter, RateLimitConfig
 from crawler.state import CrawlStateManager
-from crawler.utils import generate_content_hash
+from crawler.utils import generate_content_hash, ensure_english_url
 from crawler.parsers.homepage import HomepageParser
 from crawler.parsers.brand_models import BrandModelsParser
 from crawler.parsers.model_years import ModelYearsParser
@@ -261,8 +261,9 @@ class CrawlEngine:
             async with self.limiter:
                 page = await self.browser.acquire()
 
-                logger.info("crawl.navigating", url=queue_item.url[:80], level=queue_item.level)
-                await page.goto(queue_item.url, wait_until="domcontentloaded", timeout=60000)
+                nav_url = ensure_english_url(queue_item.url)
+                logger.info("crawl.navigating", url=nav_url[:80], level=queue_item.level)
+                await page.goto(nav_url, wait_until="domcontentloaded", timeout=60000)
                 # Wait extra for JS rendering
                 await page.wait_for_timeout(5000)
 

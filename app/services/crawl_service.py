@@ -55,7 +55,7 @@ class CrawlService:
 
         brand_id = None
         start_level = 1
-        start_url = "https://www.catcar.info/"
+        start_url = "https://www.catcar.info/?lang=en"
         parent_kwargs = {}
 
         if brand_slug:

@@ -3,36 +3,44 @@ import re
 from crawler.parsers.base import BaseParser
 from crawler.validators.model import ParsedModelYear
 
+# Regex fragments that make [ref=...] and [cursor=pointer] optional
+_ATTRS = r'(?:\s+\[.*?\])*'
+
 
 class ModelYearsParser(BaseParser):
     async def parse(self, page_content: str) -> list[dict]:
         """
         Parse the model years snapshot YAML to extract year entries.
 
-        The snapshot contains a table with rows like:
-          row "GOLF 1998 1J-W-000 001 >>" [ref=eXX]:
-            - cell "GOLF" [ref=eXX]
-            - cell "1998" [ref=eXX]:
-              - link "1998" [ref=eXX] [cursor=pointer]:
-                - /url: http://catcar.info/...
-            - cell "1J-W-000 001 >>" [ref=eXX]
+        Supports both old format (with [ref=eXX] [cursor=pointer]) and
+        new clean ARIA snapshot format (without those attributes).
         """
         results = []
         lines = page_content.split('\n')
         n = len(lines)
 
+        # Patterns flexible for both old and new snapshot formats
+        row_re = re.compile(r'^(\s+)- row "(.+?)"' + _ATTRS + r':')
+        cell_re = re.compile(r'^\s+- cell "([^"]*)"' + _ATTRS)
+        empty_cell_re = re.compile(r'^\s+- cell' + _ATTRS + r'\s*$')
+        url_re = re.compile(r'^\s+- /url:\s+(http\S+)')
+
+        # Header keywords to skip
+        header_keywords = {'Model', 'Year', 'Restriction',
+                           'Модель', 'Год', 'Ограничение'}
+
         i = 0
         while i < n:
             line = lines[i]
 
-            # Match row entries in the year table
-            row_match = re.match(r'(\s+)- row "(.+)" \[ref=\w+\]:', line)
+            row_match = row_re.match(line)
             if row_match:
                 row_indent = len(row_match.group(1))
                 row_text = row_match.group(2)
 
                 # Skip header row
-                if 'Model' in row_text and 'Year' in row_text and 'Restriction' in row_text:
+                row_words = set(row_text.split())
+                if len(row_words & header_keywords) >= 2:
                     i += 1
                     continue
 
@@ -43,36 +51,42 @@ class ModelYearsParser(BaseParser):
 
                 while j < n:
                     cell_line = lines[j]
-                    cell_indent_match = re.match(r'(\s+)', cell_line)
-                    if cell_indent_match:
-                        curr_indent = len(cell_indent_match.group(1))
-                        if curr_indent <= row_indent and cell_line.strip() and not cell_line.strip().startswith('#'):
-                            break
-                    elif cell_line.strip() == '':
+
+                    if cell_line.strip() == '':
                         j += 1
                         continue
 
+                    # Check indentation to see if we've left the row
+                    indent_match = re.match(r'^(\s+)', cell_line)
+                    if indent_match:
+                        curr_indent = len(indent_match.group(1))
+                        if curr_indent <= row_indent:
+                            break
+                    else:
+                        break
+
                     # Match cell with content
-                    cell_match = re.match(r'\s+- cell "([^"]*)" \[ref=\w+\]', cell_line)
-                    if cell_match:
-                        cells.append(cell_match.group(1))
+                    cm = cell_re.match(cell_line)
+                    if cm:
+                        cells.append(cm.group(1))
+                        j += 1
+                        continue
 
-                    # Match empty cells
-                    empty_cell_match = re.match(r'\s+- cell \[ref=\w+\]', cell_line)
-                    if empty_cell_match:
+                    # Match empty cell
+                    ecm = empty_cell_re.match(cell_line)
+                    if ecm:
                         cells.append("")
+                        j += 1
+                        continue
 
-                    # Capture URL
-                    url_match = re.match(r'\s+- /url: (http://catcar\.info/.+)', cell_line)
-                    if url_match and cell_url is None:
-                        cell_url = url_match.group(1).strip()
+                    # Match URL
+                    um = url_re.match(cell_line)
+                    if um and cell_url is None:
+                        cell_url = um.group(1).strip()
 
                     j += 1
 
-                # We need: model_code, year, restriction (optional)
-                # cells[0] = model code (e.g. "GOLF")
-                # cells[1] = year (e.g. "1998")
-                # cells[2] = restriction (optional, may be empty)
+                # cells: [model_code, year, restriction(optional)]
                 if len(cells) >= 2 and cell_url:
                     year_str = cells[1].strip()
                     if year_str.isdigit():
