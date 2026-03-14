@@ -1,0 +1,352 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - link [ref=e5] [cursor=pointer]:
+          - /url: /en/
+          - img [ref=e6]
+        - button "Connect catalogs" [ref=e7] [cursor=pointer]:
+          - generic [ref=e8]: Connect catalogs
+      - generic [ref=e10]: Audi, Volkswagen, Skoda, Seat
+      - generic [ref=e13]:
+        - link "Русский" [ref=e14] [cursor=pointer]:
+          - /url: /audivw/
+          - text: Русский
+        - link "English" [ref=e16] [cursor=pointer]:
+          - /url: /audivw/?lang=en
+          - text: English
+    - generic [ref=e18]:
+      - generic [ref=e21]:
+        - generic [ref=e22]:
+          - generic [ref=e23]: Do you sell auto parts?
+          - generic [ref=e24]: Connect auto parts catalogs to boost your sales.
+        - link "Connect CatCar catalogs" [ref=e25] [cursor=pointer]:
+          - /url: "#?utm_source=catcar&utm_medium=banner&utm_campaign=red"
+      - generic [ref=e26]:
+        - heading "Year" [level=1] [ref=e27]
+        - list [ref=e28]:
+          - listitem [ref=e29]:
+            - link [ref=e30] [cursor=pointer]:
+              - /url: http://catcar.info/audivw/?lang=en
+          - listitem [ref=e31]:
+            - link "VW" [ref=e33] [cursor=pointer]:
+              - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIn18fHN0PT0yMHx8YnJhbmQ9PXZ3fHxtYXJrZXQ9PVJEV3x8bWRsPT1HT0xGIA%3D%3D
+          - listitem [ref=e34]: Golf/Variant/4Motion Europe
+        - insertion [ref=e38]:
+          - generic [ref=e41]:
+            - heading "Это ресурсы, которые могут быть вам интересны." [level=2] [ref=e43]: Подробнее
+            - link "Audi" [ref=e44] [cursor=pointer]:
+              - generic "Audi" [ref=e45]
+              - img [ref=e47]
+            - link "Автомобиль" [ref=e49] [cursor=pointer]:
+              - generic "Автомобиль" [ref=e50]
+              - img [ref=e52]
+            - link "Автодилеры поблизости" [ref=e54] [cursor=pointer]:
+              - generic "Автодилеры поблизости" [ref=e55]
+              - img [ref=e57]
+            - link "Volkswagen" [ref=e59] [cursor=pointer]:
+              - generic "Volkswagen" [ref=e60]
+              - img [ref=e62]
+            - link "quattro" [ref=e64] [cursor=pointer]:
+              - generic "quattro" [ref=e65]
+              - img [ref=e67]
+            - link "Стекло" [ref=e69] [cursor=pointer]:
+              - generic "Стекло" [ref=e70]
+              - img [ref=e72]
+            - link "Volkswagen Tiguan" [ref=e74] [cursor=pointer]:
+              - generic "Volkswagen Tiguan" [ref=e75]
+              - img [ref=e77]
+        - table [ref=e80]:
+          - rowgroup [ref=e81]:
+            - row "Model Year Restriction" [ref=e82]:
+              - columnheader "Model" [ref=e83]
+              - columnheader "Year" [ref=e84]
+              - columnheader "Restriction" [ref=e85]
+            - row "GOLF 1998 1J-W-000 001 >>" [ref=e86]:
+              - cell "GOLF" [ref=e87]
+              - cell "1998" [ref=e88]:
+                - link "1998" [ref=e89] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMTk5OCAoMUotVy0wMDAgMDAxID4%2BKSJ9fHxzdD09NTB8fGJyYW5kPT12d3x8bWFya2V0PT1SRFd8fG1kbD09R09MRiB8fEVwaXM9PTIwM3x8RWluc2F0ej09MTk5OA%3D%3D
+              - cell "1J-W-000 001 >>" [ref=e90]
+            - row "GOLF 1999" [ref=e91]:
+              - cell "GOLF" [ref=e92]
+              - cell "1999" [ref=e93]:
+                - link "1999" [ref=e94] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMTk5OSJ9fHxzdD09NTB8fGJyYW5kPT12d3x8bWFya2V0PT1SRFd8fG1kbD09R09MRiB8fEVwaXM9PTIwM3x8RWluc2F0ej09MTk5OQ%3D%3D
+              - cell [ref=e95]
+            - row "GOLF 2000" [ref=e96]:
+              - cell "GOLF" [ref=e97]
+              - cell "2000" [ref=e98]:
+                - link "2000" [ref=e99] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAwMCJ9fHxzdD09NTB8fGJyYW5kPT12d3x8bWFya2V0PT1SRFd8fG1kbD09R09MRiB8fEVwaXM9PTIwM3x8RWluc2F0ej09MjAwMA%3D%3D
+              - cell [ref=e100]
+            - row "GOLF 2001" [ref=e101]:
+              - cell "GOLF" [ref=e102]
+              - cell "2001" [ref=e103]:
+                - link "2001" [ref=e104] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAwMSJ9fHxzdD09NTB8fGJyYW5kPT12d3x8bWFya2V0PT1SRFd8fG1kbD09R09MRiB8fEVwaXM9PTIwM3x8RWluc2F0ej09MjAwMQ%3D%3D
+              - cell [ref=e105]
+            - row "GOLF 2002" [ref=e106]:
+              - cell "GOLF" [ref=e107]
+              - cell "2002" [ref=e108]:
+                - link "2002" [ref=e109] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAwMiJ9fHxzdD09NTB8fGJyYW5kPT12d3x8bWFya2V0PT1SRFd8fG1kbD09R09MRiB8fEVwaXM9PTI2Nnx8RWluc2F0ej09MjAwMg%3D%3D
+              - cell [ref=e110]
+            - row "GOLF 2003" [ref=e111]:
+              - cell "GOLF" [ref=e112]
+              - cell "2003" [ref=e113]:
+                - link "2003" [ref=e114] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAwMyJ9fHxzdD09NTB8fGJyYW5kPT12d3x8bWFya2V0PT1SRFd8fG1kbD09R09MRiB8fEVwaXM9PTQwNXx8RWluc2F0ej09MjAwMw%3D%3D
+              - cell [ref=e115]
+            - row "GOLF 2004 1J-4-000 001 >>" [ref=e116]:
+              - cell "GOLF" [ref=e117]
+              - cell "2004" [ref=e118]:
+                - link "2004" [ref=e119] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAwNCAoMUotNC0wMDAgMDAxID4%2BKSJ9fHxzdD09NTB8fGJyYW5kPT12d3x8bWFya2V0PT1SRFd8fG1kbD09R09MRiB8fEVwaXM9PTQwNXx8RWluc2F0ej09MjAwNA%3D%3D
+              - cell "1J-4-000 001 >>" [ref=e120]
+            - row "GOLF 2004 1K-4-000 001 >>" [ref=e121]:
+              - cell "GOLF" [ref=e122]
+              - cell "2004" [ref=e123]:
+                - link "2004" [ref=e124] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAwNCAoMUstNC0wMDAgMDAxID4%2BKSJ9fHxzdD09NTB8fGJyYW5kPT12d3x8bWFya2V0PT1SRFd8fG1kbD09R09MRiB8fEVwaXM9PTQyMHx8RWluc2F0ej09MjAwNA%3D%3D
+              - cell "1K-4-000 001 >>" [ref=e125]
+            - row "GOLF 2005 1K-4-000 001 >>" [ref=e126]:
+              - cell "GOLF" [ref=e127]
+              - cell "2005" [ref=e128]:
+                - link "2005" [ref=e129] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAwNSAoMUstNC0wMDAgMDAxID4%2BKSJ9fHxzdD09NTB8fGJyYW5kPT12d3x8bWFya2V0PT1SRFd8fG1kbD09R09MRiB8fEVwaXM9PTQyMHx8RWluc2F0ej09MjAwNQ%3D%3D
+              - cell "1K-4-000 001 >>" [ref=e130]
+            - row "GOLF 2005 1J-5-000 001 >>" [ref=e131]:
+              - cell "GOLF" [ref=e132]
+              - cell "2005" [ref=e133]:
+                - link "2005" [ref=e134] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAwNSAoMUotNS0wMDAgMDAxID4%2BKSJ9fHxzdD09NTB8fGJyYW5kPT12d3x8bWFya2V0PT1SRFd8fG1kbD09R09MRiB8fEVwaXM9PTQwNXx8RWluc2F0ej09MjAwNQ%3D%3D
+              - cell "1J-5-000 001 >>" [ref=e135]
+            - row "GOLF 2005 1J-4-000 001 >>" [ref=e136]:
+              - cell "GOLF" [ref=e137]
+              - cell "2005" [ref=e138]:
+                - link "2005" [ref=e139] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAwNSAoMUotNC0wMDAgMDAxID4%2BKSJ9fHxzdD09NTB8fGJyYW5kPT12d3x8bWFya2V0PT1SRFd8fG1kbD09R09MRiB8fEVwaXM9PTQwNXx8RWluc2F0ej09MjAwNQ%3D%3D
+              - cell "1J-4-000 001 >>" [ref=e140]
+            - row "GOLF 2006 1J-6-000 001 >>" [ref=e141]:
+              - cell "GOLF" [ref=e142]
+              - cell "2006" [ref=e143]:
+                - link "2006" [ref=e144] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAwNiAoMUotNi0wMDAgMDAxID4%2BKSJ9fHxzdD09NTB8fGJyYW5kPT12d3x8bWFya2V0PT1SRFd8fG1kbD09R09MRiB8fEVwaXM9PTQwNXx8RWluc2F0ej09MjAwNg%3D%3D
+              - cell "1J-6-000 001 >>" [ref=e145]
+            - row "GOLF 2006 1K-6-000 001 >>" [ref=e146]:
+              - cell "GOLF" [ref=e147]
+              - cell "2006" [ref=e148]:
+                - link "2006" [ref=e149] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAwNiAoMUstNi0wMDAgMDAxID4%2BKSJ9fHxzdD09NTB8fGJyYW5kPT12d3x8bWFya2V0PT1SRFd8fG1kbD09R09MRiB8fEVwaXM9PTQ3NHx8RWluc2F0ej09MjAwNg%3D%3D
+              - cell "1K-6-000 001 >>" [ref=e150]
+            - row "GOLF 2007 Golf" [ref=e151]:
+              - cell "GOLF" [ref=e152]
+              - cell "2007" [ref=e153]:
+                - link "2007" [ref=e154] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAwNyAoR29sZikifXx8c3Q9PTUwfHxicmFuZD09dnd8fG1hcmtldD09UkRXfHxtZGw9PUdPTEYgfHxFcGlzPT00NzR8fEVpbnNhdHo9PTIwMDc%3D
+              - cell "Golf" [ref=e155]
+            - row "GOLF 2007 Golf Variant" [ref=e156]:
+              - cell "GOLF" [ref=e157]
+              - cell "2007" [ref=e158]:
+                - link "2007" [ref=e159] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAwNyAoR29sZiBWYXJpYW50KSJ9fHxzdD09NTB8fGJyYW5kPT12d3x8bWFya2V0PT1SRFd8fG1kbD09R09MRiB8fEVwaXM9PTYxNHx8RWluc2F0ej09MjAwNw%3D%3D
+              - cell "Golf Variant" [ref=e160]
+            - row "GOLF 2008 Golf Variant" [ref=e161]:
+              - cell "GOLF" [ref=e162]
+              - cell "2008" [ref=e163]:
+                - link "2008" [ref=e164] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAwOCAoR29sZiBWYXJpYW50KSJ9fHxzdD09NTB8fGJyYW5kPT12d3x8bWFya2V0PT1SRFd8fG1kbD09R09MRiB8fEVwaXM9PTYxNHx8RWluc2F0ej09MjAwOA%3D%3D
+              - cell "Golf Variant" [ref=e165]
+            - row "GOLF 2008 Golf" [ref=e166]:
+              - cell "GOLF" [ref=e167]
+              - cell "2008" [ref=e168]:
+                - link "2008" [ref=e169] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAwOCAoR29sZikifXx8c3Q9PTUwfHxicmFuZD09dnd8fG1hcmtldD09UkRXfHxtZGw9PUdPTEYgfHxFcGlzPT02MjV8fEVpbnNhdHo9PTIwMDg%3D
+              - cell "Golf" [ref=e170]
+            - row "GOLF 2009 Golf 1K-9-400 001 >>" [ref=e171]:
+              - cell "GOLF" [ref=e172]
+              - cell "2009" [ref=e173]:
+                - link "2009" [ref=e174] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAwOSAoR29sZiAxSy05LTQwMCAwMDEgPj4pIn18fHN0PT01MHx8YnJhbmQ9PXZ3fHxtYXJrZXQ9PVJEV3x8bWRsPT1HT0xGIHx8RXBpcz09NjQ5fHxFaW5zYXR6PT0yMDA5
+              - cell "Golf 1K-9-400 001 >>" [ref=e175]
+            - row "GOLF 2009 Golf >> 1K-9-200 000" [ref=e176]:
+              - cell "GOLF" [ref=e177]
+              - cell "2009" [ref=e178]:
+                - link "2009" [ref=e179] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAwOSAoR29sZiAgICAgICAgID4%2BIDFLLTktMjAwIDAwMCkifXx8c3Q9PTUwfHxicmFuZD09dnd8fG1hcmtldD09UkRXfHxtZGw9PUdPTEYgfHxFcGlzPT02MjV8fEVpbnNhdHo9PTIwMDk%3D
+              - cell "Golf >> 1K-9-200 000" [ref=e180]
+            - row "GOLF 2009 Golf Variant" [ref=e181]:
+              - cell "GOLF" [ref=e182]
+              - cell "2009" [ref=e183]:
+                - link "2009" [ref=e184] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAwOSAoR29sZiBWYXJpYW50KSJ9fHxzdD09NTB8fGJyYW5kPT12d3x8bWFya2V0PT1SRFd8fG1kbD09R09MRiB8fEVwaXM9PTYxNHx8RWluc2F0ej09MjAwOQ%3D%3D
+              - cell "Golf Variant" [ref=e185]
+            - row "GOLF 2010 Golf" [ref=e186]:
+              - cell "GOLF" [ref=e187]
+              - cell "2010" [ref=e188]:
+                - link "2010" [ref=e189] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxMCAoR29sZikifXx8c3Q9PTUwfHxicmFuZD09dnd8fG1hcmtldD09UkRXfHxtZGw9PUdPTEYgfHxFcGlzPT02NDl8fEVpbnNhdHo9PTIwMTA%3D
+              - cell "Golf" [ref=e190]
+            - row "GOLF 2010 Golf Variant" [ref=e191]:
+              - cell "GOLF" [ref=e192]
+              - cell "2010" [ref=e193]:
+                - link "2010" [ref=e194] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxMCAoR29sZiBWYXJpYW50KSJ9fHxzdD09NTB8fGJyYW5kPT12d3x8bWFya2V0PT1SRFd8fG1kbD09R09MRiB8fEVwaXM9PTY4NHx8RWluc2F0ej09MjAxMA%3D%3D
+              - cell "Golf Variant" [ref=e195]
+            - row "GOLF 2011 Golf Variant" [ref=e196]:
+              - cell "GOLF" [ref=e197]
+              - cell "2011" [ref=e198]:
+                - link "2011" [ref=e199] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxMSAoR29sZiBWYXJpYW50KSJ9fHxzdD09NTB8fGJyYW5kPT12d3x8bWFya2V0PT1SRFd8fG1kbD09R09MRiB8fEVwaXM9PTY4NHx8RWluc2F0ej09MjAxMQ%3D%3D
+              - cell "Golf Variant" [ref=e200]
+            - row "GOLF 2011 Golf" [ref=e201]:
+              - cell "GOLF" [ref=e202]
+              - cell "2011" [ref=e203]:
+                - link "2011" [ref=e204] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxMSAoR29sZikifXx8c3Q9PTUwfHxicmFuZD09dnd8fG1hcmtldD09UkRXfHxtZGw9PUdPTEYgfHxFcGlzPT02NDl8fEVpbnNhdHo9PTIwMTE%3D
+              - cell "Golf" [ref=e205]
+            - row "GOLF 2012 Golf Variant" [ref=e206]:
+              - cell "GOLF" [ref=e207]
+              - cell "2012" [ref=e208]:
+                - link "2012" [ref=e209] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxMiAoR29sZiBWYXJpYW50KSJ9fHxzdD09NTB8fGJyYW5kPT12d3x8bWFya2V0PT1SRFd8fG1kbD09R09MRiB8fEVwaXM9PTY4NHx8RWluc2F0ej09MjAxMg%3D%3D
+              - cell "Golf Variant" [ref=e210]
+            - row "GOLF 2012 Golf" [ref=e211]:
+              - cell "GOLF" [ref=e212]
+              - cell "2012" [ref=e213]:
+                - link "2012" [ref=e214] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxMiAoR29sZikifXx8c3Q9PTUwfHxicmFuZD09dnd8fG1hcmtldD09UkRXfHxtZGw9PUdPTEYgfHxFcGlzPT03Mjl8fEVpbnNhdHo9PTIwMTI%3D
+              - cell "Golf" [ref=e215]
+            - row "GOLF 2013 Golf AU-D-000 001 >>" [ref=e216]:
+              - cell "GOLF" [ref=e217]
+              - cell "2013" [ref=e218]:
+                - link "2013" [ref=e219] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxMyAoR29sZiBBVS1ELTAwMCAwMDEgPj4pIn18fHN0PT01MHx8YnJhbmQ9PXZ3fHxtYXJrZXQ9PVJEV3x8bWRsPT1HT0xGIHx8RXBpcz09NzQ2fHxFaW5zYXR6PT0yMDEz
+              - cell "Golf AU-D-000 001 >>" [ref=e220]
+            - row "GOLF 2013 Golf 1K-D-000 001 >>" [ref=e221]:
+              - cell "GOLF" [ref=e222]
+              - cell "2013" [ref=e223]:
+                - link "2013" [ref=e224] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxMyAoR29sZiAxSy1ELTAwMCAwMDEgPj4pIn18fHN0PT01MHx8YnJhbmQ9PXZ3fHxtYXJrZXQ9PVJEV3x8bWRsPT1HT0xGIHx8RXBpcz09NzI5fHxFaW5zYXR6PT0yMDEz
+              - cell "Golf 1K-D-000 001 >>" [ref=e225]
+            - row "GOLF 2013 Golf Variant" [ref=e226]:
+              - cell "GOLF" [ref=e227]
+              - cell "2013" [ref=e228]:
+                - link "2013" [ref=e229] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxMyAoR29sZiBWYXJpYW50KSJ9fHxzdD09NTB8fGJyYW5kPT12d3x8bWFya2V0PT1SRFd8fG1kbD09R09MRiB8fEVwaXM9PTY4NHx8RWluc2F0ej09MjAxMw%3D%3D
+              - cell "Golf Variant" [ref=e230]
+            - row "GOLF 2014 Golf Variant 1K-E-000 001 >>" [ref=e231]:
+              - cell "GOLF" [ref=e232]
+              - cell "2014" [ref=e233]:
+                - link "2014" [ref=e234] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxNCAoR29sZiBWYXJpYW50IDFLLUUtMDAwIDAwMSA%2BPikifXx8c3Q9PTUwfHxicmFuZD09dnd8fG1hcmtldD09UkRXfHxtZGw9PUdPTEYgfHxFcGlzPT02ODR8fEVpbnNhdHo9PTIwMTQ%3D
+              - cell "Golf Variant 1K-E-000 001 >>" [ref=e235]
+            - row "GOLF 2014 Golf AU-E-000 001 >>" [ref=e236]:
+              - cell "GOLF" [ref=e237]
+              - cell "2014" [ref=e238]:
+                - link "2014" [ref=e239] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxNCAoR29sZiBBVS1FLTAwMCAwMDEgPj4pIn18fHN0PT01MHx8YnJhbmQ9PXZ3fHxtYXJrZXQ9PVJEV3x8bWRsPT1HT0xGIHx8RXBpcz09NzQ2fHxFaW5zYXR6PT0yMDE0
+              - cell "Golf AU-E-000 001 >>" [ref=e240]
+            - row "GOLF 2014 Golf Variant AU-E-500 001 >>" [ref=e241]:
+              - cell "GOLF" [ref=e242]
+              - cell "2014" [ref=e243]:
+                - link "2014" [ref=e244] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxNCAoR29sZiBWYXJpYW50IEFVLUUtNTAwIDAwMSA%2BPikifXx8c3Q9PTUwfHxicmFuZD09dnd8fG1hcmtldD09UkRXfHxtZGw9PUdPTEYgfHxFcGlzPT03NjN8fEVpbnNhdHo9PTIwMTQ%3D
+              - cell "Golf Variant AU-E-500 001 >>" [ref=e245]
+            - row "GOLF 2015 Golf Variant" [ref=e246]:
+              - cell "GOLF" [ref=e247]
+              - cell "2015" [ref=e248]:
+                - link "2015" [ref=e249] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxNSAoR29sZiBWYXJpYW50KSJ9fHxzdD09NTB8fGJyYW5kPT12d3x8bWFya2V0PT1SRFd8fG1kbD09R09MRiB8fEVwaXM9PTc2M3x8RWluc2F0ej09MjAxNQ%3D%3D
+              - cell "Golf Variant" [ref=e250]
+            - row "GOLF 2015 Golf" [ref=e251]:
+              - cell "GOLF" [ref=e252]
+              - cell "2015" [ref=e253]:
+                - link "2015" [ref=e254] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxNSAoR29sZikifXx8c3Q9PTUwfHxicmFuZD09dnd8fG1hcmtldD09UkRXfHxtZGw9PUdPTEYgfHxFcGlzPT03NDZ8fEVpbnNhdHo9PTIwMTU%3D
+              - cell "Golf" [ref=e255]
+            - row "GOLF 2016 Golf 5G1***" [ref=e256]:
+              - cell "GOLF" [ref=e257]
+              - cell "2016" [ref=e258]:
+                - link "2016" [ref=e259] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxNiAoR29sZiA1RzEqKiopIn18fHN0PT01MHx8YnJhbmQ9PXZ3fHxtYXJrZXQ9PVJEV3x8bWRsPT1HT0xGIHx8RXBpcz09NzQ2fHxFaW5zYXR6PT0yMDE2
+              - cell "Golf 5G1***" [ref=e260]
+            - row "GOLF 2016 Golf Variant BA5***" [ref=e261]:
+              - cell "GOLF" [ref=e262]
+              - cell "2016" [ref=e263]:
+                - link "2016" [ref=e264] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxNiAoR29sZiBWYXJpYW50IEJBNSoqKikifXx8c3Q9PTUwfHxicmFuZD09dnd8fG1hcmtldD09UkRXfHxtZGw9PUdPTEYgfHxFcGlzPT03NjN8fEVpbnNhdHo9PTIwMTY%3D
+              - cell "Golf Variant BA5***" [ref=e265]
+            - row "GOLF 2016 Golf Variant BX5***" [ref=e266]:
+              - cell "GOLF" [ref=e267]
+              - cell "2016" [ref=e268]:
+                - link "2016" [ref=e269] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxNiAoR29sZiBWYXJpYW50IEJYNSoqKikifXx8c3Q9PTUwfHxicmFuZD09dnd8fG1hcmtldD09UkRXfHxtZGw9PUdPTEYgfHxFcGlzPT03OTZ8fEVpbnNhdHo9PTIwMTY%3D
+              - cell "Golf Variant BX5***" [ref=e270]
+            - row "GOLF 2016 Golf AU1***" [ref=e271]:
+              - cell "GOLF" [ref=e272]
+              - cell "2016" [ref=e273]:
+                - link "2016" [ref=e274] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxNiAoR29sZiBBVTEqKiopIn18fHN0PT01MHx8YnJhbmQ9PXZ3fHxtYXJrZXQ9PVJEV3x8bWRsPT1HT0xGIHx8RXBpcz09NzgxfHxFaW5zYXR6PT0yMDE2
+              - cell "Golf AU1***" [ref=e275]
+            - row "GOLF 2017 Golf BQ1***/Golf Variant BV5***" [ref=e276]:
+              - cell "GOLF" [ref=e277]
+              - cell "2017" [ref=e278]:
+                - link "2017" [ref=e279] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxNyAoR29sZiBCUTEqKipcL0dvbGYgVmFyaWFudCBCVjUqKiopIn18fHN0PT01MHx8YnJhbmQ9PXZ3fHxtYXJrZXQ9PVJEV3x8bWRsPT1HT0xGIHx8RXBpcz09ODI3fHxFaW5zYXR6PT0yMDE3
+              - cell "Golf BQ1***/Golf Variant BV5***" [ref=e280]
+            - row "GOLF 2017 Golf Variant BA5***" [ref=e281]:
+              - cell "GOLF" [ref=e282]
+              - cell "2017" [ref=e283]:
+                - link "2017" [ref=e284] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxNyAoR29sZiBWYXJpYW50IEJBNSoqKikifXx8c3Q9PTUwfHxicmFuZD09dnd8fG1hcmtldD09UkRXfHxtZGw9PUdPTEYgfHxFcGlzPT03NjN8fEVpbnNhdHo9PTIwMTc%3D
+              - cell "Golf Variant BA5***" [ref=e285]
+            - row "GOLF 2017 Golf 5G1***" [ref=e286]:
+              - cell "GOLF" [ref=e287]
+              - cell "2017" [ref=e288]:
+                - link "2017" [ref=e289] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxNyAoR29sZiA1RzEqKiopIn18fHN0PT01MHx8YnJhbmQ9PXZ3fHxtYXJrZXQ9PVJEV3x8bWRsPT1HT0xGIHx8RXBpcz09NzQ2fHxFaW5zYXR6PT0yMDE3
+              - cell "Golf 5G1***" [ref=e290]
+            - row "GOLF 2018" [ref=e291]:
+              - cell "GOLF" [ref=e292]
+              - cell "2018" [ref=e293]:
+                - link "2018" [ref=e294] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxOCJ9fHxzdD09NTB8fGJyYW5kPT12d3x8bWFya2V0PT1SRFd8fG1kbD09R09MRiB8fEVwaXM9PTgyN3x8RWluc2F0ej09MjAxOA%3D%3D
+              - cell [ref=e295]
+            - row "GOLF 2019" [ref=e296]:
+              - cell "GOLF" [ref=e297]
+              - cell "2019" [ref=e298]:
+                - link "2019" [ref=e299] [cursor=pointer]:
+                  - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxOSJ9fHxzdD09NTB8fGJyYW5kPT12d3x8bWFya2V0PT1SRFd8fG1kbD09R09MRiB8fEVwaXM9PTgyN3x8RWluc2F0ej09MjAxOQ%3D%3D
+              - cell [ref=e300]
+      - insertion [ref=e303]:
+        - generic [ref=e305]:
+          - generic "Это ресурсы, которые могут быть вам интересны." [ref=e306]: Подробнее
+          - link "Стекло" [ref=e307] [cursor=pointer]:
+            - img [ref=e309]
+            - text: Стекло
+          - link "Автомобиль" [ref=e311] [cursor=pointer]:
+            - img [ref=e313]
+            - text: Автомобиль
+          - link "Volkswagen" [ref=e315] [cursor=pointer]:
+            - img [ref=e317]
+            - text: Volkswagen
+          - link "Volkswagen Tiguan" [ref=e319] [cursor=pointer]:
+            - img [ref=e321]
+            - text: Volkswagen Tiguan
+          - link "quattro" [ref=e323] [cursor=pointer]:
+            - img [ref=e325]
+            - text: quattro
+          - link "Audi" [ref=e327] [cursor=pointer]:
+            - img [ref=e329]
+            - text: Audi
+          - link "Автодилеры поблизости" [ref=e331] [cursor=pointer]:
+            - img [ref=e333]
+            - text: Автодилеры поблизости
+  - generic:
+    - insertion:
+      - iframe [ref=e336]:
+        
+  - link "2026 CATCAR.INFO" [ref=e339] [cursor=pointer]:
+    - /url: https://www.catcar.info/en/

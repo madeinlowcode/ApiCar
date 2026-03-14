@@ -1,0 +1,116 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - link [ref=e5] [cursor=pointer]:
+          - /url: /en/
+          - img [ref=e6]
+        - button "Connect catalogs" [ref=e7] [cursor=pointer]:
+          - generic [ref=e8]: Connect catalogs
+      - generic [ref=e10]: Audi, Volkswagen, Skoda, Seat
+      - generic [ref=e13]:
+        - link "Русский" [ref=e14] [cursor=pointer]:
+          - /url: /audivw/
+          - text: Русский
+        - link "English" [ref=e16] [cursor=pointer]:
+          - /url: /audivw/?lang=en
+          - text: English
+    - generic [ref=e18]:
+      - generic [ref=e21]:
+        - generic [ref=e22]:
+          - generic [ref=e23]: Do you sell auto parts?
+          - generic [ref=e24]: Connect auto parts catalogs to boost your sales.
+        - link "Connect CatCar catalogs" [ref=e25] [cursor=pointer]:
+          - /url: "#?utm_source=catcar&utm_medium=banner&utm_campaign=red"
+      - generic [ref=e26]:
+        - heading "Main parts" [level=1] [ref=e27]
+        - list [ref=e28]:
+          - listitem [ref=e29]:
+            - link [ref=e30] [cursor=pointer]:
+              - /url: http://catcar.info/audivw/?lang=en
+          - listitem [ref=e31]:
+            - link "VW" [ref=e33] [cursor=pointer]:
+              - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIn18fHN0PT0yMHx8YnJhbmQ9PXZ3fHxtYXJrZXQ9PVJEV3x8bWRsPT1HT0xGIHx8RXBpcz09NzQ2fHxFaW5zYXR6PT0yMDE3
+          - listitem [ref=e34]:
+            - link "Golf/Variant/4Motion Europe" [ref=e36] [cursor=pointer]:
+              - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSJ9fHxzdD09NDB8fGJyYW5kPT12d3x8bWFya2V0PT1SRFd8fG1kbD09R09MRiB8fEVwaXM9PTc0Nnx8RWluc2F0ej09MjAxNw%3D%3D
+          - listitem [ref=e37]: 2017 (Golf 5G1***)
+        - insertion [ref=e41]:
+          - generic [ref=e44]:
+            - heading "Это ресурсы, которые могут быть вам интересны." [level=2] [ref=e46]: Подробнее
+            - link "Volkswagen" [ref=e47] [cursor=pointer]:
+              - generic "Volkswagen" [ref=e48]
+              - img [ref=e50]
+            - link "Автомобиль" [ref=e52] [cursor=pointer]:
+              - generic "Автомобиль" [ref=e53]
+              - img [ref=e55]
+            - link "Стекло" [ref=e57] [cursor=pointer]:
+              - generic "Стекло" [ref=e58]
+              - img [ref=e60]
+            - link "Volkswagen Tiguan" [ref=e62] [cursor=pointer]:
+              - generic "Volkswagen Tiguan" [ref=e63]
+              - img [ref=e65]
+            - link "Автодилеры поблизости" [ref=e67] [cursor=pointer]:
+              - generic "Автодилеры поблизости" [ref=e68]
+              - img [ref=e70]
+            - link "Audi" [ref=e72] [cursor=pointer]:
+              - generic "Audi" [ref=e73]
+              - img [ref=e75]
+            - link "quattro" [ref=e77] [cursor=pointer]:
+              - generic "quattro" [ref=e78]
+              - img [ref=e80]
+        - generic [ref=e82]:
+          - link "Accessors Accessors" [ref=e84] [cursor=pointer]:
+            - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxNyAoR29sZiA1RzEqKiopIiwiNjAiOiJBY2Nlc3NvcnMifXx8c3Q9PTYwfHxicmFuZD09dnd8fG1hcmtldD09UkRXfHxtZGw9PUdPTEYgfHxFcGlzPT03NDZ8fEVpbnNhdHo9PTIwMTd8fE1haW5Hcm91cD09MA%3D%3D
+            - img "Accessors" [ref=e86]
+            - generic [ref=e87]: Accessors
+          - link "Engine Engine" [ref=e89] [cursor=pointer]:
+            - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxNyAoR29sZiA1RzEqKiopIiwiNjAiOiJFbmdpbmUifXx8c3Q9PTYwfHxicmFuZD09dnd8fG1hcmtldD09UkRXfHxtZGw9PUdPTEYgfHxFcGlzPT03NDZ8fEVpbnNhdHo9PTIwMTd8fE1haW5Hcm91cD09MQ%3D%3D
+            - img "Engine" [ref=e91]
+            - generic [ref=e92]: Engine
+          - link "Fuel, exhaust, cooling Fuel, exhaust, cooling" [ref=e94] [cursor=pointer]:
+            - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxNyAoR29sZiA1RzEqKiopIiwiNjAiOiJGdWVsLCBleGhhdXN0LCBjb29saW5nIn18fHN0PT02MHx8YnJhbmQ9PXZ3fHxtYXJrZXQ9PVJEV3x8bWRsPT1HT0xGIHx8RXBpcz09NzQ2fHxFaW5zYXR6PT0yMDE3fHxNYWluR3JvdXA9PTI%3D
+            - img "Fuel, exhaust, cooling" [ref=e96]
+            - generic [ref=e97]: Fuel, exhaust, cooling
+          - link "Gearbox Gearbox" [ref=e99] [cursor=pointer]:
+            - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxNyAoR29sZiA1RzEqKiopIiwiNjAiOiJHZWFyYm94In18fHN0PT02MHx8YnJhbmQ9PXZ3fHxtYXJrZXQ9PVJEV3x8bWRsPT1HT0xGIHx8RXBpcz09NzQ2fHxFaW5zYXR6PT0yMDE3fHxNYWluR3JvdXA9PTM%3D
+            - img "Gearbox" [ref=e101]
+            - generic [ref=e102]: Gearbox
+          - link "Front axle, steering Front axle, steering" [ref=e104] [cursor=pointer]:
+            - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxNyAoR29sZiA1RzEqKiopIiwiNjAiOiJGcm9udCBheGxlLCBzdGVlcmluZyJ9fHxzdD09NjB8fGJyYW5kPT12d3x8bWFya2V0PT1SRFd8fG1kbD09R09MRiB8fEVwaXM9PTc0Nnx8RWluc2F0ej09MjAxN3x8TWFpbkdyb3VwPT00
+            - img "Front axle, steering" [ref=e106]
+            - generic [ref=e107]: Front axle, steering
+          - link "Rear axle Rear axle" [ref=e109] [cursor=pointer]:
+            - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxNyAoR29sZiA1RzEqKiopIiwiNjAiOiJSZWFyIGF4bGUifXx8c3Q9PTYwfHxicmFuZD09dnd8fG1hcmtldD09UkRXfHxtZGw9PUdPTEYgfHxFcGlzPT03NDZ8fEVpbnNhdHo9PTIwMTd8fE1haW5Hcm91cD09NQ%3D%3D
+            - img "Rear axle" [ref=e111]
+            - generic [ref=e112]: Rear axle
+          - link "Wheels, brakes Wheels, brakes" [ref=e114] [cursor=pointer]:
+            - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxNyAoR29sZiA1RzEqKiopIiwiNjAiOiJXaGVlbHMsIGJyYWtlcyJ9fHxzdD09NjB8fGJyYW5kPT12d3x8bWFya2V0PT1SRFd8fG1kbD09R09MRiB8fEVwaXM9PTc0Nnx8RWluc2F0ej09MjAxN3x8TWFpbkdyb3VwPT02
+            - img "Wheels, brakes" [ref=e116]
+            - generic [ref=e117]: Wheels, brakes
+          - link "Pedals Pedals" [ref=e119] [cursor=pointer]:
+            - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxNyAoR29sZiA1RzEqKiopIiwiNjAiOiJQZWRhbHMifXx8c3Q9PTYwfHxicmFuZD09dnd8fG1hcmtldD09UkRXfHxtZGw9PUdPTEYgfHxFcGlzPT03NDZ8fEVpbnNhdHo9PTIwMTd8fE1haW5Hcm91cD09Nw%3D%3D
+            - img "Pedals" [ref=e121]
+            - generic [ref=e122]: Pedals
+          - link "Body Body" [ref=e124] [cursor=pointer]:
+            - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxNyAoR29sZiA1RzEqKiopIiwiNjAiOiJCb2R5In18fHN0PT02MHx8YnJhbmQ9PXZ3fHxtYXJrZXQ9PVJEV3x8bWRsPT1HT0xGIHx8RXBpcz09NzQ2fHxFaW5zYXR6PT0yMDE3fHxNYWluR3JvdXA9PTg%3D
+            - img "Body" [ref=e126]
+            - generic [ref=e127]: Body
+          - link "Electrics Electrics" [ref=e129] [cursor=pointer]:
+            - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxNyAoR29sZiA1RzEqKiopIiwiNjAiOiJFbGVjdHJpY3MifXx8c3Q9PTYwfHxicmFuZD09dnd8fG1hcmtldD09UkRXfHxtZGw9PUdPTEYgfHxFcGlzPT03NDZ8fEVpbnNhdHo9PTIwMTd8fE1haW5Hcm91cD09OQ%3D%3D
+            - img "Electrics" [ref=e131]
+            - generic [ref=e132]: Electrics
+      - generic:
+        - insertion:
+          - iframe [ref=e134]:
+            
+      - generic [ref=e136]:
+        - insertion:
+          - iframe [ref=e138]:
+            
+  - generic:
+    - insertion:
+      - iframe [ref=e140]:
+        
+  - link "2026 CATCAR.INFO" [ref=e143] [cursor=pointer]:
+    - /url: https://www.catcar.info/en/

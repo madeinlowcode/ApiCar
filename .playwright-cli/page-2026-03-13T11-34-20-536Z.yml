@@ -1,0 +1,170 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - link [ref=e5] [cursor=pointer]:
+          - /url: /en/
+          - img [ref=e6]
+        - button "Connect catalogs" [ref=e7] [cursor=pointer]:
+          - generic [ref=e8]: Connect catalogs
+      - generic [ref=e10]: Audi, Volkswagen, Skoda, Seat
+      - generic [ref=e13]:
+        - link "Русский" [ref=e14] [cursor=pointer]:
+          - /url: /audivw/
+          - text: Русский
+        - link "English" [ref=e16] [cursor=pointer]:
+          - /url: /audivw/?lang=en
+          - text: English
+    - generic [ref=e18]:
+      - generic [ref=e21]:
+        - generic [ref=e22]:
+          - generic [ref=e23]: Do you sell auto parts?
+          - generic [ref=e24]: Connect auto parts catalogs to boost your sales.
+        - link "Connect CatCar catalogs" [ref=e25] [cursor=pointer]:
+          - /url: "#?utm_source=catcar&utm_medium=banner&utm_campaign=red"
+      - generic [ref=e26]:
+        - heading "Parts" [level=1] [ref=e27]
+        - list [ref=e28]:
+          - listitem [ref=e29]:
+            - link [ref=e30] [cursor=pointer]:
+              - /url: http://catcar.info/audivw/?lang=en
+          - listitem [ref=e31]:
+            - link "VW" [ref=e33] [cursor=pointer]:
+              - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIn18fHN0PT0yMHx8YnJhbmQ9PXZ3fHxtYXJrZXQ9PVJEV3x8bWRsPT1HT0xGIHx8RXBpcz09NzQ2fHxFaW5zYXR6PT0yMDE3fHxNYWluR3JvdXA9PTF8fEJpbGR0YWZlbD09MTAwMDN8fEdyYWZpaz09MDEwMDAxNzQ2
+          - listitem [ref=e34]:
+            - link "Golf/Variant/4Motion Europe" [ref=e36] [cursor=pointer]:
+              - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSJ9fHxzdD09NDB8fGJyYW5kPT12d3x8bWFya2V0PT1SRFd8fG1kbD09R09MRiB8fEVwaXM9PTc0Nnx8RWluc2F0ej09MjAxN3x8TWFpbkdyb3VwPT0xfHxCaWxkdGFmZWw9PTEwMDAzfHxHcmFmaWs9PTAxMDAwMTc0Ng%3D%3D
+          - listitem [ref=e37]:
+            - link "2017 (Golf 5G1***)" [ref=e39] [cursor=pointer]:
+              - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxNyAoR29sZiA1RzEqKiopIn18fHN0PT01MHx8YnJhbmQ9PXZ3fHxtYXJrZXQ9PVJEV3x8bWRsPT1HT0xGIHx8RXBpcz09NzQ2fHxFaW5zYXR6PT0yMDE3fHxNYWluR3JvdXA9PTF8fEJpbGR0YWZlbD09MTAwMDN8fEdyYWZpaz09MDEwMDAxNzQ2
+          - listitem [ref=e40]:
+            - link "Engine" [ref=e42] [cursor=pointer]:
+              - /url: http://catcar.info/audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIiwiNDAiOiJHb2xmXC9WYXJpYW50XC80TW90aW9uIEV1cm9wZSIsIjUwIjoiMjAxNyAoR29sZiA1RzEqKiopIiwiNjAiOiJFbmdpbmUifXx8c3Q9PTYwfHxicmFuZD09dnd8fG1hcmtldD09UkRXfHxtZGw9PUdPTEYgfHxFcGlzPT03NDZ8fEVpbnNhdHo9PTIwMTd8fE1haW5Hcm91cD09MXx8QmlsZHRhZmVsPT0xMDAwM3x8R3JhZmlrPT0wMTAwMDE3NDY%3D
+          - listitem [ref=e43]: "10003"
+        - insertion [ref=e47]:
+          - generic [ref=e50]:
+            - heading "Это ресурсы, которые могут быть вам интересны." [level=2] [ref=e52]: Подробнее
+            - link "Volkswagen" [ref=e53] [cursor=pointer]:
+              - generic "Volkswagen" [ref=e54]
+              - img [ref=e56]
+            - link "Audi" [ref=e58] [cursor=pointer]:
+              - generic "Audi" [ref=e59]
+              - img [ref=e61]
+            - link "Volkswagen Tiguan" [ref=e63] [cursor=pointer]:
+              - generic "Volkswagen Tiguan" [ref=e64]
+              - img [ref=e66]
+            - link "Автомобиль" [ref=e68] [cursor=pointer]:
+              - generic "Автомобиль" [ref=e69]
+              - img [ref=e71]
+            - link "Стекло" [ref=e73] [cursor=pointer]:
+              - generic "Стекло" [ref=e74]
+              - img [ref=e76]
+            - link "Автодилеры поблизости" [ref=e78] [cursor=pointer]:
+              - generic "Автодилеры поблизости" [ref=e79]
+              - img [ref=e81]
+            - link "quattro" [ref=e83] [cursor=pointer]:
+              - generic "quattro" [ref=e84]
+              - img [ref=e86]
+        - generic [ref=e88]:
+          - img [ref=e90]
+          - generic:
+            - insertion:
+              - iframe [ref=e94]:
+                
+          - table [ref=e95]:
+            - rowgroup [ref=e96]:
+              - row "part number Description Remark ST Model data" [ref=e97]:
+                - columnheader [ref=e98]
+                - columnheader [ref=e99]
+                - columnheader "part number" [ref=e100]
+                - columnheader "Description" [ref=e101]
+                - columnheader "Remark" [ref=e102]
+                - columnheader "ST" [ref=e103]
+                - columnheader "Model data" [ref=e104]
+                - columnheader [ref=e105]
+              - row "base engine 1.0 ltr. petrol eng.+ CHZD" [ref=e106]:
+                - columnheader [ref=e107]
+                - columnheader [ref=e108]
+                - columnheader [ref=e109]
+                - columnheader "base engine" [ref=e110]: base engine
+                - columnheader "1.0 ltr." [ref=e111]: 1.0 ltr.
+                - columnheader [ref=e112]
+                - columnheader "petrol eng.+ CHZD" [ref=e113]:
+                  - text: petrol eng.+
+                  - text: CHZD
+                - columnheader [ref=e114]
+              - 'row "1 04C100032F base engine additionally to be used items: 2 1 PR-G1C Add to Basket" [ref=e115]':
+                - cell "1" [ref=e116]
+                - cell [ref=e117]
+                - cell "04C100032F" [ref=e118]:
+                  - link "04C100032F" [ref=e119] [cursor=pointer]:
+                    - /url: http://ar-demo.tradesoft.pro/search.html?article=04C100032F&sort___search_results_by=final_price&term=0&smode=A&from=catcar
+                - 'cell "base engine additionally to be used items: 2" [ref=e120]':
+                  - text: base engine
+                  - text: "additionally to be used items:"
+                  - text: "2"
+                - cell [ref=e121]
+                - cell "1" [ref=e122]
+                - cell "PR-G1C" [ref=e123]: PR-G1C
+                - cell "Add to Basket" [ref=e124]:
+                  - link "Add to Basket" [ref=e125] [cursor=pointer]:
+                    - /url: http://ar-demo.tradesoft.pro/search.html?article=04C100032F&sort___search_results_by=final_price&term=0&smode=A&from=catcar
+              - 'row "1 04C100032FX base engine additionally to be used items: 2 1 PR-G1C Add to Basket" [ref=e126]':
+                - cell "1" [ref=e127]
+                - cell [ref=e128]
+                - cell "04C100032FX" [ref=e129]:
+                  - link "04C100032FX" [ref=e130] [cursor=pointer]:
+                    - /url: http://ar-demo.tradesoft.pro/search.html?article=04C100032FX&sort___search_results_by=final_price&term=0&smode=A&from=catcar
+                - 'cell "base engine additionally to be used items: 2" [ref=e131]':
+                  - text: base engine
+                  - text: "additionally to be used items:"
+                  - text: "2"
+                - cell [ref=e132]
+                - cell "1" [ref=e133]
+                - cell "PR-G1C" [ref=e134]: PR-G1C
+                - cell "Add to Basket" [ref=e135]:
+                  - link "Add to Basket" [ref=e136] [cursor=pointer]:
+                    - /url: http://ar-demo.tradesoft.pro/search.html?article=04C100032FX&sort___search_results_by=final_price&term=0&smode=A&from=catcar
+              - row "2 06B105313D needle bearing - 15X21X23,6 1 PR-G1C Add to Basket" [ref=e137]:
+                - cell "2" [ref=e138]
+                - cell [ref=e139]
+                - cell "06B105313D" [ref=e140]:
+                  - link "06B105313D" [ref=e141] [cursor=pointer]:
+                    - /url: http://ar-demo.tradesoft.pro/search.html?article=06B105313D&sort___search_results_by=final_price&term=0&smode=A&from=catcar
+                - cell "needle bearing -" [ref=e142]: needle bearing -
+                - cell "15X21X23,6" [ref=e143]
+                - cell "1" [ref=e144]
+                - cell "PR-G1C" [ref=e145]
+                - cell "Add to Basket" [ref=e146]:
+                  - link "Add to Basket" [ref=e147] [cursor=pointer]:
+                    - /url: http://ar-demo.tradesoft.pro/search.html?article=06B105313D&sort___search_results_by=final_price&term=0&smode=A&from=catcar
+      - insertion [ref=e150]:
+        - generic [ref=e152]:
+          - generic "Это ресурсы, которые могут быть вам интересны." [ref=e153]: Подробнее
+          - link "Volkswagen Tiguan" [ref=e154] [cursor=pointer]:
+            - img [ref=e156]
+            - text: Volkswagen Tiguan
+          - link "quattro" [ref=e158] [cursor=pointer]:
+            - img [ref=e160]
+            - text: quattro
+          - link "Стекло" [ref=e162] [cursor=pointer]:
+            - img [ref=e164]
+            - text: Стекло
+          - link "Volkswagen" [ref=e166] [cursor=pointer]:
+            - img [ref=e168]
+            - text: Volkswagen
+          - link "Автомобиль" [ref=e170] [cursor=pointer]:
+            - img [ref=e172]
+            - text: Автомобиль
+          - link "Автодилеры поблизости" [ref=e174] [cursor=pointer]:
+            - img [ref=e176]
+            - text: Автодилеры поблизости
+          - link "Audi" [ref=e178] [cursor=pointer]:
+            - img [ref=e180]
+            - text: Audi
+  - generic:
+    - insertion:
+      - iframe [ref=e183]:
+        
+  - link "2026 CATCAR.INFO" [ref=e186] [cursor=pointer]:
+    - /url: https://www.catcar.info/en/

@@ -1,0 +1,451 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - link "Русский" [ref=e6] [cursor=pointer]:
+        - /url: /setlang.php?lang=RU
+      - link "English" [ref=e7] [cursor=pointer]:
+        - /url: /setlang.php?lang=EN
+    - link "On-line car parts catalogs" [ref=e8] [cursor=pointer]:
+      - /url: /en/
+      - heading "On-line car parts catalogs" [level=1] [ref=e9]
+    - paragraph
+  - generic [ref=e11]:
+    - generic [ref=e14]:
+      - generic [ref=e17]:
+        - generic [ref=e18]:
+          - generic [ref=e19]: Do you sell auto parts?
+          - generic [ref=e20]: Connect auto parts catalogs to boost your sales.
+        - link "Connect CatCar catalogs" [ref=e21] [cursor=pointer]:
+          - /url: "#?utm_source=catcar&utm_medium=banner&utm_campaign=red"
+      - heading "Multi brands" [level=2] [ref=e22]
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - link [ref=e25] [cursor=pointer]:
+            - /url: /totalcatalog/?lang=en
+          - link [ref=e27] [cursor=pointer]:
+            - /url: /totalcatalog/?lang=en
+            - img [ref=e28]
+          - link "CATCAR Aftermarket" [ref=e30] [cursor=pointer]:
+            - /url: /totalcatalog/?lang=en
+            - text: CATCAR
+            - text: Aftermarket
+        - generic [ref=e31]:
+          - link [ref=e32] [cursor=pointer]:
+            - /url: /usa_oem/?lang=en
+          - link [ref=e34] [cursor=pointer]:
+            - /url: /usa_oem/?lang=en
+            - img [ref=e35]
+          - link "Genuine USA parts" [ref=e37] [cursor=pointer]:
+            - /url: /usa_oem/?lang=en
+            - text: Genuine
+            - text: USA parts
+        - generic [ref=e38]:
+          - link [ref=e39] [cursor=pointer]:
+            - /url: /usa_noem/?lang=en
+          - link [ref=e41] [cursor=pointer]:
+            - /url: /usa_noem/?lang=en
+            - img [ref=e42]
+          - link "Aftermarket USA parts" [ref=e44] [cursor=pointer]:
+            - /url: /usa_noem/?lang=en
+            - text: Aftermarket
+            - text: USA parts
+      - generic [ref=e46]:
+        - heading "Europe" [level=2] [ref=e47]
+        - list [ref=e49]:
+          - listitem [ref=e50]:
+            - link "Audi" [ref=e51] [cursor=pointer]:
+              - /url: /audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IkFVREkifXx8c3Q9PTIwfHxicmFuZD09YXU%3D
+              - img [ref=e53]
+              - generic [ref=e54]: Audi
+          - listitem [ref=e55]:
+            - link "Seat" [ref=e56] [cursor=pointer]:
+              - /url: /audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlNFQVQifXx8c3Q9PTIwfHxicmFuZD09c2U%3D
+              - img [ref=e58]
+              - generic [ref=e59]: Seat
+          - listitem [ref=e60]:
+            - link "Skoda" [ref=e61] [cursor=pointer]:
+              - /url: /audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlNLT0RBIn18fHN0PT0yMHx8YnJhbmQ9PXNr
+              - img [ref=e63]
+              - generic [ref=e64]: Skoda
+          - listitem [ref=e65]:
+            - link "Volkswagen" [ref=e66] [cursor=pointer]:
+              - /url: /audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIn18fHN0PT0yMHx8YnJhbmQ9PXZ3
+              - img [ref=e68]
+              - generic [ref=e69]: Volkswagen
+        - list [ref=e71]:
+          - listitem [ref=e72]:
+            - link "BMW" [ref=e73] [cursor=pointer]:
+              - /url: /bmw/?lang=en
+              - img [ref=e75]
+              - generic [ref=e76]: BMW
+          - listitem [ref=e77]:
+            - link "Mini" [ref=e78] [cursor=pointer]:
+              - /url: /bmw/?lang=en&l=c3Q9PTIwfHxzdHM9PXsiMTAiOiJNYXJxdWUiLCIyMCI6Ik1pbmkifXx8Ym10PT1NaW5pfHxicD09UHx8ZnY9PVZU
+              - img [ref=e80]
+              - generic [ref=e81]: Mini
+          - listitem [ref=e82]:
+            - link "Rolls-Royce" [ref=e83] [cursor=pointer]:
+              - /url: /bmw/?lang=en&l=c3Q9PTIwfHxzdHM9PXsiMTAiOiJcdTA0MWNcdTA0MzBcdTA0NDBcdTA0M2FcdTA0MzAiLCIyMCI6IlJvbGxzLVJveWNlIn18fGJtdD09Um9sbHMtUm95Y2V8fGJwPT1QfHxmdj09VlQ
+              - img [ref=e85]
+              - generic [ref=e86]: Rolls-Royce
+        - list [ref=e88]:
+          - listitem [ref=e89]:
+            - link "Mercedes" [ref=e90] [cursor=pointer]:
+              - /url: /mercedes/?lang=en
+              - img [ref=e92]
+              - generic [ref=e93]: Mercedes
+          - listitem [ref=e94]:
+            - link "Smart" [ref=e95] [cursor=pointer]:
+              - /url: /mercedes/?lang=en&l=Y2xhc3M9PUZ8fGNvdW50cnk9PU18fHN0PT0yMHx8c3RzPT17IjEwIjoiQXNzb3J0bWVudCBjbGFzcyIsIjIwIjoic21hcnQtIn0%3D
+              - img [ref=e97]
+              - generic [ref=e98]: Smart
+        - list [ref=e100]:
+          - listitem [ref=e101]:
+            - link "Renault" [ref=e102] [cursor=pointer]:
+              - /url: /renault/?lang=en
+              - img [ref=e104]
+              - generic [ref=e105]: Renault
+          - listitem [ref=e106]:
+            - link "Dacia" [ref=e107] [cursor=pointer]:
+              - /url: /renault/?brand=dacia&lang=en
+              - img [ref=e109]
+              - generic [ref=e110]: Dacia
+        - list [ref=e112]:
+          - listitem [ref=e113]:
+            - link "Ford" [ref=e114] [cursor=pointer]:
+              - /url: /ford/?lang=en
+              - img [ref=e116]
+              - generic [ref=e117]: Ford
+        - list [ref=e119]:
+          - listitem [ref=e120]:
+            - link "Peugeot" [ref=e121] [cursor=pointer]:
+              - /url: /peugeot/?lang=en
+              - img [ref=e123]
+              - generic [ref=e124]: Peugeot
+        - list [ref=e126]:
+          - listitem [ref=e127]:
+            - link "Opel" [ref=e128] [cursor=pointer]:
+              - /url: /opel/?lang=en
+              - img [ref=e130]
+              - generic [ref=e131]: Opel
+          - listitem [ref=e132]:
+            - link "Vauxhall" [ref=e133] [cursor=pointer]:
+              - /url: /opel/?lang=en&l=bWFya2E9PVZYfHxzdD09MTA%3D
+              - img [ref=e135]
+              - generic [ref=e136]: Vauxhall
+        - list [ref=e138]:
+          - listitem [ref=e139]:
+            - link "Citroёn" [ref=e140] [cursor=pointer]:
+              - /url: /citroen/?lang=en
+              - img [ref=e142]
+              - generic [ref=e143]: Citroёn
+        - list [ref=e145]:
+          - listitem [ref=e146]:
+            - link "Volvo" [ref=e147] [cursor=pointer]:
+              - /url: /volvo/?lang=en
+              - img [ref=e149]
+              - generic [ref=e150]: Volvo
+        - list [ref=e152]:
+          - listitem [ref=e153]:
+            - link "Jaguar" [ref=e154] [cursor=pointer]:
+              - /url: /jaguar/?lang=en
+              - img [ref=e156]
+              - generic [ref=e157]: Jaguar
+      - generic [ref=e159]:
+        - heading "Japan" [level=2] [ref=e160]
+        - list [ref=e162]:
+          - listitem [ref=e163]:
+            - link "Infiniti" [ref=e164] [cursor=pointer]:
+              - /url: /nissan/?lang=en
+              - img [ref=e166]
+              - generic [ref=e167]: Infiniti
+          - listitem [ref=e168]:
+            - link "Nissan" [ref=e169] [cursor=pointer]:
+              - /url: /nissan/?lang=en
+              - img [ref=e171]
+              - generic [ref=e172]: Nissan
+        - list [ref=e174]:
+          - listitem [ref=e175]:
+            - link "Lexus" [ref=e176] [cursor=pointer]:
+              - /url: /toyota/?lang=en
+              - img [ref=e178]
+              - generic [ref=e179]: Lexus
+          - listitem [ref=e180]:
+            - link "Toyota" [ref=e181] [cursor=pointer]:
+              - /url: /toyota/?lang=en
+              - img [ref=e183]
+              - generic [ref=e184]: Toyota
+        - list [ref=e186]:
+          - listitem [ref=e187]:
+            - link "Honda" [ref=e188] [cursor=pointer]:
+              - /url: /honda/?lang=en
+              - img [ref=e190]
+              - generic [ref=e191]: Honda
+        - list [ref=e193]:
+          - listitem [ref=e194]:
+            - link "Suzuki" [ref=e195] [cursor=pointer]:
+              - /url: /suzuki/?lang=en
+              - img [ref=e197]
+              - generic [ref=e198]: Suzuki
+        - list [ref=e200]:
+          - listitem [ref=e201]:
+            - link "Mazda" [ref=e202] [cursor=pointer]:
+              - /url: /mazda/?lang=en
+              - img [ref=e204]
+              - generic [ref=e205]: Mazda
+        - list [ref=e207]:
+          - listitem [ref=e208]:
+            - link "Mitsubishi" [ref=e209] [cursor=pointer]:
+              - /url: /mitsubishi/?lang=en
+              - img [ref=e211]
+              - generic [ref=e212]: Mitsubishi
+        - list [ref=e214]:
+          - listitem [ref=e215]:
+            - link "Isuzu" [ref=e216] [cursor=pointer]:
+              - /url: /isuzu/?lang=en
+              - img [ref=e218]
+              - generic [ref=e219]: Isuzu
+        - list [ref=e221]:
+          - listitem [ref=e222]:
+            - link "Subaru" [ref=e223] [cursor=pointer]:
+              - /url: /subaru/?lang=en
+              - img [ref=e225]
+              - generic [ref=e226]: Subaru
+      - generic [ref=e228]:
+        - heading "Korea" [level=2] [ref=e229]
+        - list [ref=e231]:
+          - listitem [ref=e232]:
+            - link "Hyundai" [ref=e233] [cursor=pointer]:
+              - /url: /hyundai/?lang=en
+              - img [ref=e235]
+              - generic [ref=e236]: Hyundai
+        - list [ref=e238]:
+          - listitem [ref=e239]:
+            - link "Kia" [ref=e240] [cursor=pointer]:
+              - /url: /kia/?lang=en
+              - img [ref=e242]
+              - generic [ref=e243]: Kia
+        - list [ref=e245]:
+          - listitem [ref=e246]:
+            - link "Ssang Yong" [ref=e247] [cursor=pointer]:
+              - /url: /ssangyong/?lang=en
+              - img [ref=e249]
+              - generic [ref=e250]: Ssang Yong
+      - generic [ref=e252]:
+        - heading "USA" [level=2] [ref=e253]
+        - list [ref=e255]:
+          - listitem [ref=e256]:
+            - link "Chrysler" [ref=e257] [cursor=pointer]:
+              - /url: /chrysler/?lang=en
+              - img [ref=e259]
+              - generic [ref=e260]: Chrysler
+      - insertion [ref=e264]
+    - generic [ref=e265]:
+      - generic [ref=e266]:
+        - heading "How customers search for a spare part in an online store?" [level=2] [ref=e267]:
+          - text: How customers search
+          - text: for a spare part in
+          - text: an online store?
+        - link [ref=e268] [cursor=pointer]:
+          - /url: https://www.tradesoft.pro/products/web-autocatalogs/
+        - link "Read more" [ref=e270] [cursor=pointer]:
+          - /url: https://www.tradesoft.pro/products/web-autocatalogs/
+          - text: Read
+          - text: more
+      - generic [ref=e271]:
+        - generic [ref=e272]: News
+        - generic [ref=e273]:
+          - generic [ref=e274]: 07.09.2018
+          - generic [ref=e275]:
+            - text: New catalog -
+            - link "Jaguar" [ref=e276] [cursor=pointer]:
+              - /url: /jaguar/?lang=en
+            - text: (01.2017)
+        - generic: .................................
+        - generic [ref=e277]:
+          - generic [ref=e278]: 06.07.2018
+          - generic [ref=e279]:
+            - text: Catalog update -
+            - link "Mazda" [ref=e280] [cursor=pointer]:
+              - /url: /mazda/?lang=en
+            - text: (02.2018)
+        - generic: .................................
+        - generic [ref=e281]:
+          - generic [ref=e282]: 14.03.2018
+          - generic [ref=e283]:
+            - text: Catalog update -
+            - link "CATCAR Aftermarket" [ref=e284] [cursor=pointer]:
+              - /url: /totalcatalog/?lang=en
+            - text: (version - 01/2018)
+        - generic: .................................
+        - generic [ref=e285]:
+          - generic [ref=e286]: 01.03.2018
+          - generic [ref=e287]:
+            - text: Catalog update -
+            - link "Mercedes" [ref=e288] [cursor=pointer]:
+              - /url: /mercedes/?lang=en
+            - text: (11.2017)
+      - generic [ref=e290]:
+        - generic [ref=e291]: Poll
+        - generic [ref=e292]: Which new catalog would you prefer to see?
+        - generic [ref=e294]:
+          - generic [ref=e295]:
+            - generic [ref=e297] [cursor=pointer]:
+              - radio "Chery" [ref=e298]
+              - text: Chery
+            - generic [ref=e300] [cursor=pointer]:
+              - radio "Chevrolet" [ref=e301]
+              - text: Chevrolet
+            - generic [ref=e303] [cursor=pointer]:
+              - radio "Daihatsu" [ref=e304]
+              - text: Daihatsu
+            - generic [ref=e306] [cursor=pointer]:
+              - radio "Fiat" [ref=e307]
+              - text: Fiat
+            - generic [ref=e309] [cursor=pointer]:
+              - radio "Great Wall" [ref=e310]
+              - text: Great Wall
+            - generic [ref=e312] [cursor=pointer]:
+              - radio "Iveco (cargo)" [ref=e313]
+              - text: Iveco (cargo)
+            - generic [ref=e315] [cursor=pointer]:
+              - radio "Land Rover" [ref=e316]
+              - text: Land Rover
+            - generic [ref=e318] [cursor=pointer]:
+              - radio "Lifan" [ref=e319]
+              - text: Lifan
+            - generic [ref=e321] [cursor=pointer]:
+              - radio "Man (cargo)" [ref=e322]
+              - text: Man (cargo)
+            - generic [ref=e324] [cursor=pointer]:
+              - radio "Porsche" [ref=e325]
+              - text: Porsche
+            - generic [ref=e327] [cursor=pointer]:
+              - radio "Scania (cargo)" [ref=e328]
+              - text: Scania (cargo)
+            - generic [ref=e329]:
+              - generic [ref=e330] [cursor=pointer]:
+                - radio "Other" [ref=e331]
+                - text: Other
+              - textbox [ref=e332]
+          - button "Vote" [ref=e333] [cursor=pointer]
+  - generic [ref=e335]:
+    - link "On-line car parts catalogs" [ref=e337] [cursor=pointer]:
+      - /url: /
+    - generic [ref=e338]:
+      - heading "Multi brands" [level=5] [ref=e339]
+      - list [ref=e340]:
+        - listitem [ref=e341]:
+          - link "CATCAR Aftermarket" [ref=e342] [cursor=pointer]:
+            - /url: /totalcatalog/?lang=en
+        - listitem [ref=e343]:
+          - link "Genuine USA parts" [ref=e344] [cursor=pointer]:
+            - /url: /usa_oem/?lang=en
+        - listitem [ref=e345]:
+          - link "Aftermarket USA parts" [ref=e346] [cursor=pointer]:
+            - /url: /usa_noem/?lang=en
+    - generic [ref=e347]:
+      - heading "Europe" [level=5] [ref=e348]
+      - list:
+        - listitem [ref=e349]:
+          - link "Audi" [ref=e350] [cursor=pointer]:
+            - /url: /audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IkFVREkifXx8c3Q9PTIwfHxicmFuZD09YXU%3D
+        - listitem [ref=e351]:
+          - link "Seat" [ref=e352] [cursor=pointer]:
+            - /url: /audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlNFQVQifXx8c3Q9PTIwfHxicmFuZD09c2U%3D
+        - listitem [ref=e353]:
+          - link "Skoda" [ref=e354] [cursor=pointer]:
+            - /url: /audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlNLT0RBIn18fHN0PT0yMHx8YnJhbmQ9PXNr
+        - listitem [ref=e355]:
+          - link "Volkswagen" [ref=e356] [cursor=pointer]:
+            - /url: /audivw/?lang=en&l=c3RzPT17IjEwIjoiQnJhbmQiLCIyMCI6IlZXIn18fHN0PT0yMHx8YnJhbmQ9PXZ3
+        - listitem [ref=e357]:
+          - link "BMW" [ref=e358] [cursor=pointer]:
+            - /url: /bmw/?lang=en
+        - listitem [ref=e359]:
+          - link "Mini" [ref=e360] [cursor=pointer]:
+            - /url: /bmw/?lang=en&l=c3Q9PTIwfHxzdHM9PXsiMTAiOiJNYXJxdWUiLCIyMCI6Ik1pbmkifXx8Ym10PT1NaW5pfHxicD09UHx8ZnY9PVZU
+        - listitem [ref=e361]:
+          - link "Rolls-Royce" [ref=e362] [cursor=pointer]:
+            - /url: /bmw/?lang=en&l=c3Q9PTIwfHxzdHM9PXsiMTAiOiJcdTA0MWNcdTA0MzBcdTA0NDBcdTA0M2FcdTA0MzAiLCIyMCI6IlJvbGxzLVJveWNlIn18fGJtdD09Um9sbHMtUm95Y2V8fGJwPT1QfHxmdj09VlQ
+        - listitem [ref=e363]:
+          - link "Mercedes" [ref=e364] [cursor=pointer]:
+            - /url: /mercedes/?lang=en
+        - listitem [ref=e365]:
+          - link "Smart" [ref=e366] [cursor=pointer]:
+            - /url: /mercedes/?lang=en&l=Y2xhc3M9PUZ8fGNvdW50cnk9PU18fHN0PT0yMHx8c3RzPT17IjEwIjoiQXNzb3J0bWVudCBjbGFzcyIsIjIwIjoic21hcnQtIn0%3D
+        - listitem [ref=e367]:
+          - link "Renault" [ref=e368] [cursor=pointer]:
+            - /url: /renault/?lang=en
+        - listitem [ref=e369]:
+          - link "Dacia" [ref=e370] [cursor=pointer]:
+            - /url: /renault/?brand=dacia&lang=en
+        - listitem [ref=e371]:
+          - link "Ford" [ref=e372] [cursor=pointer]:
+            - /url: /ford/?lang=en
+        - listitem [ref=e373]:
+          - link "Peugeot" [ref=e374] [cursor=pointer]:
+            - /url: /peugeot/?lang=en
+        - listitem [ref=e375]:
+          - link "Opel" [ref=e376] [cursor=pointer]:
+            - /url: /opel/?lang=en
+        - listitem [ref=e377]:
+          - link "Vauxhall" [ref=e378] [cursor=pointer]:
+            - /url: /opel/?lang=en&l=bWFya2E9PVZYfHxzdD09MTA%3D
+        - listitem [ref=e379]:
+          - link "Citroёn" [ref=e380] [cursor=pointer]:
+            - /url: /citroen/?lang=en
+        - listitem [ref=e381]:
+          - link "Volvo" [ref=e382] [cursor=pointer]:
+            - /url: /volvo/?lang=en
+    - generic [ref=e383]:
+      - heading "Japan" [level=5] [ref=e384]
+      - list [ref=e385]:
+        - listitem [ref=e386]:
+          - link "Infiniti" [ref=e387] [cursor=pointer]:
+            - /url: /nissan/?lang=en
+        - listitem [ref=e388]:
+          - link "Nissan" [ref=e389] [cursor=pointer]:
+            - /url: /nissan/?lang=en
+        - listitem [ref=e390]:
+          - link "Lexus" [ref=e391] [cursor=pointer]:
+            - /url: /toyota/?lang=en
+        - listitem [ref=e392]:
+          - link "Toyota" [ref=e393] [cursor=pointer]:
+            - /url: /toyota/?lang=en
+        - listitem [ref=e394]:
+          - link "Honda" [ref=e395] [cursor=pointer]:
+            - /url: /honda/?lang=en
+        - listitem [ref=e396]:
+          - link "Suzuki" [ref=e397] [cursor=pointer]:
+            - /url: /suzuki/?lang=en
+        - listitem [ref=e398]:
+          - link "Mazda" [ref=e399] [cursor=pointer]:
+            - /url: /mazda/?lang=en
+        - listitem [ref=e400]:
+          - link "Mitsubishi" [ref=e401] [cursor=pointer]:
+            - /url: /mitsubishi/?lang=en
+        - listitem [ref=e402]:
+          - link "Isuzu" [ref=e403] [cursor=pointer]:
+            - /url: /isuzu/?lang=en
+        - listitem [ref=e404]:
+          - link "Subaru" [ref=e405] [cursor=pointer]:
+            - /url: /subaru/?lang=en
+    - generic [ref=e406]:
+      - heading "Korea" [level=5] [ref=e407]
+      - list [ref=e408]:
+        - listitem [ref=e409]:
+          - link "Hyundai" [ref=e410] [cursor=pointer]:
+            - /url: /hyundai/?lang=en
+        - listitem [ref=e411]:
+          - link "Kia" [ref=e412] [cursor=pointer]:
+            - /url: /kia/?lang=en
+        - listitem [ref=e413]:
+          - link "Ssang Yong" [ref=e414] [cursor=pointer]:
+            - /url: /ssangyong/?lang=en
+    - generic [ref=e415]:
+      - heading "USA" [level=5] [ref=e416]
+      - list [ref=e417]:
+        - listitem [ref=e418]:
+          - link "Chrysler" [ref=e419] [cursor=pointer]:
+            - /url: /chrysler/?lang=en

@@ -1,0 +1,14 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.dev
+    volumes:
+      - ./shared:/app/shared
+      - ./app:/app/app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    environment:
+      DATABASE_URL: postgresql+asyncpg://catcar:catcar@postgres:5432/catcar
+      REDIS_URL: redis://redis:6379/0
+      ADMIN_API_KEY: dev-key-123
+      LOG_LEVEL: DEBUG
