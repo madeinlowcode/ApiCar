@@ -80,3 +80,6 @@ test.db-wal
 
 # Playwright
 playwright/.auth/
+
+# Backups
+backups/

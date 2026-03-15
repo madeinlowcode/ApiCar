@@ -101,13 +101,25 @@ class BrandModelsParser(BaseParser):
 
                     j += 1
 
-                # Expected cells: [code, name, description(maybe empty), prod_date, markets]
+                # Two table formats:
+                # VW-style (5+ cells): [code, name, description, prod_date, markets]
+                # Toyota-style (4 cells): [code, name, prod_date, production_codes]
                 if len(cells) >= 4 and cell_url:
                     code = cells[0].strip()
                     name = cells[1].strip()
-                    description = cells[2].strip() if len(cells) > 2 else ""
-                    prod_date = cells[3].strip() if len(cells) > 3 else ""
-                    markets = cells[4].strip() if len(cells) > 4 else ""
+
+                    if len(cells) == 4:
+                        # Toyota-style: code, name, prod_date, production_codes
+                        description = ""
+                        prod_date = cells[2].strip()
+                        markets = ""
+                        production_codes = cells[3].strip()
+                    else:
+                        # VW-style: code, name, description, prod_date, markets
+                        description = cells[2].strip()
+                        prod_date = cells[3].strip()
+                        markets = cells[4].strip() if len(cells) > 4 else ""
+                        production_codes = ""
 
                     if code and name and prod_date and cell_url:
                         item = {
@@ -121,6 +133,8 @@ class BrandModelsParser(BaseParser):
                             item["description"] = description
                         if markets:
                             item["markets"] = markets
+                        if production_codes:
+                            item["production_codes"] = production_codes
                         results.append(item)
 
                 i = j

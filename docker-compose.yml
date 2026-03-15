@@ -30,6 +30,21 @@ services:
         condition: service_started
     restart: unless-stopped
 
+  crawler:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.crawler
+    environment:
+      DATABASE_URL: postgresql+asyncpg://catcar:catcar@postgres:5432/catcar
+      REDIS_URL: redis://redis:6379/0
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+    shm_size: 256m
+    profiles:
+      - crawl
+
   postgres:
     image: postgres:16-alpine
     environment:

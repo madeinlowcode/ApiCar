@@ -14,9 +14,9 @@ class Model(TimestampMixin, Base):
     market_id: Mapped[int] = mapped_column(
         ForeignKey("markets.id", ondelete="CASCADE"), nullable=False
     )
-    catalog_code: Mapped[str] = mapped_column(String(20), nullable=False)
+    catalog_code: Mapped[str] = mapped_column(String(50), nullable=False)
     name: Mapped[str] = mapped_column(String(200), nullable=False)
-    production_date: Mapped[str | None] = mapped_column(String(50), nullable=True)
+    production_date: Mapped[str | None] = mapped_column(Text, nullable=True)
     production_codes: Mapped[str | None] = mapped_column(String(200), nullable=True)
     catalog_url: Mapped[str] = mapped_column(Text, nullable=False)
 

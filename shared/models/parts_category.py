@@ -12,7 +12,7 @@ class PartsCategory(TimestampMixin, Base):
         ForeignKey("model_years.id", ondelete="CASCADE"), nullable=False
     )
     category_index: Mapped[int] = mapped_column(SmallInteger, nullable=False)
-    name: Mapped[str] = mapped_column(String(100), nullable=False)
+    name: Mapped[str] = mapped_column(String(300), nullable=False)
     catalog_url: Mapped[str] = mapped_column(Text, nullable=False)
 
     model_year = relationship("ModelYear", back_populates="parts_categories")

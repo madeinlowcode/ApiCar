@@ -16,6 +16,8 @@ class ParsedModel(BaseModel):
     def code_must_not_be_empty(cls, v):
         if v is None or str(v).strip() == "":
             raise ValueError("code must not be empty")
+        if len(str(v).strip()) > 30:
+            raise ValueError("code too long — likely a parsing error")
         return v
 
     @field_validator("name")
@@ -37,6 +39,13 @@ class ParsedModel(BaseModel):
     def production_date_must_not_be_empty(cls, v):
         if v is None or str(v).strip() == "":
             raise ValueError("production_date must not be empty")
+        # Allow "unknown" for catalogs that don't show dates (Renault, Peugeot)
+        if str(v).strip().lower() == "unknown":
+            return v
+        # If no digits, it's likely a vehicle type description (Mercedes)
+        # — normalize to "unknown" instead of rejecting
+        if not any(c.isdigit() for c in str(v)):
+            return "unknown"
         return v
 
 
