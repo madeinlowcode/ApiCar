@@ -118,10 +118,15 @@ async def run_crawl(max_level: int = 6, job_id: int | None = None):
     banner(f"RESILIENT CRAWL — max_level={max_level}")
     info(f"Database: {settings.DATABASE_URL.split('@')[1] if '@' in settings.DATABASE_URL else '...'}")
 
+    import os
+    min_delay = float(os.environ.get("CRAWL_MIN_DELAY", "1.0"))
+    max_delay = float(os.environ.get("CRAWL_MAX_DELAY", "2.0"))
+    info(f"Rate limiter: {min_delay}-{max_delay}s delay")
+
     async with BrowserPool(pool_size=1, headless=True) as browser:
         rate_config = RateLimitConfig(
-            min_delay=2.0,
-            max_delay=5.0,
+            min_delay=min_delay,
+            max_delay=max_delay,
             max_concurrent=1,
         )
         limiter = RateLimiter(rate_config)
