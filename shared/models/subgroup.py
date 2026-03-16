@@ -11,8 +11,8 @@ class Subgroup(TimestampMixin, Base):
     category_id: Mapped[int] = mapped_column(
         ForeignKey("parts_categories.id", ondelete="CASCADE"), nullable=False
     )
-    main_group: Mapped[str] = mapped_column(String(10), nullable=False)
-    illustration_number: Mapped[str] = mapped_column(String(20), nullable=False)
+    main_group: Mapped[str] = mapped_column(String(50), nullable=False)
+    illustration_number: Mapped[str] = mapped_column(String(100), nullable=False)
     description: Mapped[str] = mapped_column(String(300), nullable=False)
     remark: Mapped[str | None] = mapped_column(String(300), nullable=True)
     model_data: Mapped[str | None] = mapped_column(Text, nullable=True)
