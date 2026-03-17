@@ -108,8 +108,8 @@ async def run_crawl(max_level: int = 6, job_id: int | None = None):
     db_engine = create_async_engine(
         settings.DATABASE_URL,
         echo=False,
-        pool_size=5,
-        max_overflow=5,
+        pool_size=3,
+        max_overflow=2,
     )
     SessionFactory = async_sessionmaker(
         db_engine, class_=AsyncSession, expire_on_commit=False
