@@ -124,12 +124,12 @@ class PartsParser(BaseParser):
                             "part_no": part_no,
                             "description": desc,
                             "url": cell_url,
-                            "position": int(position_str),
+                            "position": position_str,
                         }
                         if remark:
                             item["remark"] = remark
                         if quantity_str.isdigit():
-                            item["quantity"] = int(quantity_str)
+                            item["quantity"] = quantity_str
                         if model_data and model_data != "Add to Basket":
                             item["model_data"] = model_data
                         results.append(item)
