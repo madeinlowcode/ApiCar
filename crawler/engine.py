@@ -626,8 +626,8 @@ class CrawlEngine:
             # Only update if content_hash changed (or was absent).
             subgroup_id = queue_item.parent_subgroup_id
             for item in validated_items:
-                position = item.get("position")
-                part_number = item.get("part_no", "")
+                position = str(item.get("position", "")) or None
+                part_number = str(item.get("part_no", ""))
                 result = await session.execute(
                     sa_select(Part).where(
                         Part.subgroup_id == subgroup_id,
@@ -645,13 +645,14 @@ class CrawlEngine:
                         part.model_data = item.get("model_data")
                         part.content_hash = new_hash
                 else:
+                    qty = item.get("quantity")
                     part = Part(
                         subgroup_id=subgroup_id,
                         position=position,
                         part_number=part_number,
                         description=item["description"],
                         remark=item.get("remark"),
-                        quantity=item.get("quantity"),
+                        quantity=str(qty) if qty is not None else None,
                         model_data=item.get("model_data"),
                         content_hash=new_hash,
                     )

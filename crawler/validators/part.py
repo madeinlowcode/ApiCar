@@ -6,9 +6,9 @@ class ParsedPart(BaseModel):
     part_no: str
     description: str
     url: str
-    position: Optional[int] = None
+    position: Optional[str] = None
     remark: Optional[str] = None
-    quantity: Optional[int] = None
+    quantity: Optional[str] = None
     model_data: Optional[str] = None
 
     @field_validator("part_no")
@@ -35,6 +35,6 @@ class ParsedPart(BaseModel):
     @field_validator("quantity")
     @classmethod
     def quantity_must_be_positive(cls, v):
-        if v is not None and v <= 0:
+        if v is not None and v.isdigit() and int(v) <= 0:
             raise ValueError("quantity must be at least 1")
         return v
