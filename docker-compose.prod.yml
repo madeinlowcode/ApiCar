@@ -64,6 +64,28 @@ services:
     profiles:
       - crawl
 
+  crawler-http:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.crawler-http
+    env_file: .env
+    environment:
+      DATABASE_URL: ${DATABASE_URL}
+      CRAWL_MIN_DELAY: ${CRAWL_HTTP_MIN_DELAY:-0.3}
+      CRAWL_MAX_DELAY: ${CRAWL_HTTP_MAX_DELAY:-0.8}
+      DB_POOL_SIZE: "2"
+      DB_MAX_OVERFLOW: "1"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 128M
+    profiles:
+      - crawl-http
+
   postgres:
     image: postgres:16-alpine
     environment:
@@ -94,7 +116,7 @@ services:
       - "-c"
       - "maintenance_work_mem=256MB"
       - "-c"
-      - "max_connections=50"
+      - "max_connections=150"
       - "-c"
       - "checkpoint_completion_target=0.9"
       - "-c"

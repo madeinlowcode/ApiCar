@@ -23,6 +23,10 @@ crawler = [
     "playwright>=1.44",
     "arq>=0.26",
 ]
+crawler-http = [
+    "httpx>=0.27",
+    "beautifulsoup4>=4.12",
+]
 dev = [
     "api-car[api,crawler]",
     "pytest>=8.0",
