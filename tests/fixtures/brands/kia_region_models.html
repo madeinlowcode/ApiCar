@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1024" />
+	<title>2018 ЕВРОПА - Catcar.info</title>
+    <link href="/css/promo.css" rel="stylesheet">
+	<link href="/css/font.css" rel="stylesheet">
+	<link href="/css/main.css" rel="stylesheet">
+	<link href="/css/bmw.css" rel="stylesheet">
+	<link href="/css/form.css" rel="stylesheet">
+    <link href="/css/b24-form.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/promo.header.css" type="text/css" media="screen, projection" />
+</head>
+<body><div class="modal" id="msg-form">
+	<div class="msg-form">
+		<input type="hidden" name="js_order_wrong_email" value="Wrong e-mail!">
+		<input type="hidden" name="js_order_fill_in_all_fileds" value="Please, fill all fields!">
+		<input type="hidden" name="js_order_no_checkboxes" value="Please, choose at least one checkbox!">
+		<input type="hidden" name="js_order_message_was_sent" value="Message has been successfully sent!">
+		
+		<input type="hidden" name="js_answer_success" value="Message has been successfully sent!">
+		<input type="hidden" name="js_answer_wrong_email" value="Your message was not sent. Please type another e-mail.">
+		<input type="hidden" name="js_answer_later" value="Your message was not sent. Please check your e-mail and try later.">
+		
+		<a class="close modal__close"></a>
+		<div class="loaderfeedback">
+			<img src="/_sysimg/big_catalog2/ajax-loader.gif">
+		</div>
+		<div class="success"></div>
+		<div id="feedback">
+			<div class="msg-form__title">Request to connect  catalogs</div>
+			<form action="/order.php" method="post" >
+				<div>
+					<p class="msg-form__label">Name</p>
+					<input type="text" name="name" class="user" required>
+				</div>
+				<div>
+					<p class="msg-form__label">Phone</p>
+					<input type="text" name="contact_phonenumber" class="user" required>
+				</div>
+        <input type="hidden" name="lang" value="EN">
+        <div>
+          <p class="msg-form__label">E-mail</p>
+          <input type="text" name="contact_email" class="user" required>
+        </div>
+        <input type="hidden" name="lang" value="EN">
+
+				<p class="msg-form__subtitle">Connect  catalogs</p>
+
+				<div class="msg-form__checkboxes required">
+					<label class="msg-form__checkbox">
+						<input type="checkbox" name="website" class="msg-form__checkbox">
+						<span class="msg-form__check-mark"></span>
+						<div class="msg-form__checkbox-text">to the website</div>
+					</label>
+					<label class="msg-form__checkbox">
+						<input type="checkbox" name="software" class="msg-form__checkbox">
+						<span class="msg-form__check-mark"></span>
+						<div class="msg-form__checkbox-text">to my software</div>
+					</label>
+					<label class="msg-form__checkbox">
+						<input type="checkbox" name="crm" class="msg-form__checkbox">
+						<span class="msg-form__check-mark"></span>
+						<div class="msg-form__checkbox-text">to the CRM system</div>
+					</label>
+					<label class="msg-form__checkbox">
+						<input type="checkbox" name="erp" class="msg-form__checkbox">
+						<span class="msg-form__check-mark"></span>
+						<div class="msg-form__checkbox-text">to the ERP system</div>
+					</label>
+				</div>
+
+				<div
+					class="g-recaptcha"
+					data-sitekey="6LcX208UAAAAADenrfbbrEjGgBkwVo2dT70FMn-q"
+					data-callback="GoogleCaptchaFunction"
+				>
+			</div>
+			<input class="btn msg-form__submit btn_submit_msg" type="submit" value="Submit">
+			
+			<script src='https://www.google.com/recaptcha/api.js?hl=en'></script>
+		</form>
+	</div>
+</div>
+<div class="shadow" style="display: none;"></div>
+</div>
+<div class="modal modal--info" id="info">
+	<a class="close modal__close"></a>
+    <div class="loaderfeedback">
+       <img src="/_sysimg/big_catalog2/ajax-loader.gif">
+    </div>
+	<div class="modal-content">
+
+	</div>
+</div>
+
+<div class="wrapper">
+
+	<!--Begin Шапка-->
+	<div class="header header__kia clearfix">
+		<div class="header__left">
+			<a class="logo" href="/en/">
+				<img src="/images/logo.png">
+			</a>
+            <script data-b24-form="click/119/drxjmk" data-skip-moving="true">
+                (function(w,d,u){ var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0); var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h); })
+                (window,document,'https://b24.tradesoft.ru/upload/crm/form/loader_119_drxjmk.js');
+                window.addEventListener('b24:form:init', (event) => {
+                    let form = event.detail.object;
+                    if (form.identification.id == 119) {
+                        form.design.style = 'custom-feedback-modal';
+                    }
+                });
+            </script>
+            <button class="hide-btn">
+			    <a class="btn header__btn">Connect catalogs</a>
+            </button>
+		</div>
+
+		<div class="leftside">
+			<div class="slogan header__slogan">KIA</div>
+			<div class="ico-row__kia header__ico-row"></div>
+		</div><div class="rightside">
+			<div class="lang-list header__lang-list">
+				<a class="lang-list__item" href="/kia/">
+					<i class="lang-list__ico ico-ru"></i>
+					<span class="lang-list__title">Русский</span>
+				</a>
+				<a class="lang-list__item lang-list__item--active" href="/kia/?lang=en">
+					<i class="lang-list__ico ico-en"></i>
+					<span class="lang-list__title">English</span>
+				</a>
+			</div>
+		</div>
+        </div>
+	<!--End Шапка-->
+
+   <div class="header-fixed header-fixed--sticky">
+		<div class="header-fixed__inner">
+			<a class="logo header-fixed__logo" href="/">
+				<img src="/images/logo.png">
+			</a>
+
+			<div class="leftside slogan header-fixed__slogan">KIA</div>
+            <script data-b24-form="click/119/drxjmk" data-skip-moving="true">
+                (function(w,d,u){ var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0); var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h); })
+                (window,document,'https://b24.tradesoft.ru/upload/crm/form/loader_119_drxjmk.js');
+                window.addEventListener('b24:form:init', (event) => {
+                    let form = event.detail.object;
+                    if (form.identification.id == 119) {
+                        form.design.style = 'custom-feedback-modal';
+                    }
+                });
+            </script>
+            <button class="hide-btn">
+			    <a class="leftside btn header-fixed__btn">Connect catalogs</a>
+            </button>
+		</div>
+	</div>
+
+	<div class="content"><div class="header_inner">
+    <div class="cat_wrapper">
+        <div class="cat_inner_wrapper cat_inner_wrapper_nobg">
+            <!--BEGIN promo-->
+            <a class="promo-animate__text">
+                <span class="promo-animate__title">Do you sell auto parts?</span>
+                <span class="promo-animate__descr">Connect auto parts catalogs to boost your sales.</span>
+            </a>
+            <script data-b24-form="click/119/drxjmk" data-skip-moving="true">
+                (function(w,d,u){ var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0); var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h); })
+                (window,document,'https://b24.tradesoft.ru/upload/crm/form/loader_119_drxjmk.js');
+            </script>
+            <a class="btn_connect_cat" href="#?utm_source=catcar&utm_medium=banner&utm_campaign=red">Connect CatCar catalogs</a>
+            <!--END promo-->
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<div class="content-inner"><h1>Model</h1>
+
+    <!--Begin Хлебные крошки-->
+    <ul class="breadcrumbs"><li class="breadcrumbs__item">
+            <a class="breadcrumbs__home" href="/en/"></a>
+		</li>
+        <li class="breadcrumbs__item">
+            <span class="breadcrumbs__sep"></span>
+            <a href="http://www.catcar.info/kia/?lang=en&l=">Рынок</a>
+        </li>
+        <li class="breadcrumbs__item">
+            <span class="breadcrumbs__sep"></span>
+            <span>2018 ЕВРОПА</span>
+        </li>
+        </ul>
+    <!--End Хлебные крошки-->
+
+    <!--Begin Контент--><!--рекламу не убирать. она не работает только в РФ. ее можно посмотреть если зайти на сайт через VPN-->
+<div class="content-right">
+    <div class="promo-google">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- catcar_sky -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:160px;height:600px"
+             data-ad-client="ca-pub-7816917914461606"
+             data-ad-slot="4850847903"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+
+    </div>
+</div>
+<div class="content-left">
+
+        <div class="groups-parts"><div>
+                  <a class="groups-parts__item" href="http://www.catcar.info/kia/?lang=en&l=eWVhcj09MjAxOHx8cmVnaW9uPT1FVVJ8fHN0PT0zMHx8c3RzPT17IjEwIjoiXHUwNDIwXHUwNDRiXHUwNDNkXHUwNDNlXHUwNDNhIiwiMjAiOiIyMDE4IFx1MDQxNVx1MDQxMlx1MDQyMFx1MDQxZVx1MDQxZlx1MDQxMCIsIjMwIjoiMjAxOCBDRVJBVE9cL0ZPUlRFIDE2ICgyMDE2LSkifXx8Y2M9PUtFVVJQQTcyfHxjYXQ9PUtFVVJQQTcxNnx8UmVnaW9uMj09RUVML0VFUi98fGYyMz09QTcw">
+                      <span class="groups-parts__img">
+                          <img src="http://ci.catcar.info/kia_2017_05/_cutups/KEURPA72.png" alt="CERATO/FORTE 16 (2016-)" onerror="this.src='http://ci.catcar.info/kia_2017_05/_cutups/0.png'">
+                      </span>
+                      <span class="groups-parts__title">CERATO/FORTE 16 (2016-) [EUR]</span>
+                  </a>
+               </div>
+            <div>
+                  <a class="groups-parts__item" href="http://www.catcar.info/kia/?lang=en&l=eWVhcj09MjAxOHx8cmVnaW9uPT1FVVJ8fHN0PT0zMHx8c3RzPT17IjEwIjoiXHUwNDIwXHUwNDRiXHUwNDNkXHUwNDNlXHUwNDNhIiwiMjAiOiIyMDE4IFx1MDQxNVx1MDQxMlx1MDQyMFx1MDQxZVx1MDQxZlx1MDQxMCIsIjMwIjoiMjAxOCBGT1JURSAxNiAoTUVYSUNPIFBMQU5ULUVVUikgKDIwMTYtKSJ9fHxjYz09TUVVUlBCMDF8fGNhdD09TUVVUlBCMDE2fHxSZWdpb24yPT1FRUwvfHxmMjM9PUIwMA%3D%3D">
+                      <span class="groups-parts__img">
+                          <img src="http://ci.catcar.info/kia_2017_05/_cutups/MEURPB01.png" alt="FORTE 16 (MEXICO PLANT-EUR) (2016-)" onerror="this.src='http://ci.catcar.info/kia_2017_05/_cutups/0.png'">
+                      </span>
+                      <span class="groups-parts__title">FORTE 16 (MEXICO PLANT-EUR) (2016-) [EUR]</span>
+                  </a>
+               </div>
+            <div>
+                  <a class="groups-parts__item" href="http://www.catcar.info/kia/?lang=en&l=eWVhcj09MjAxOHx8cmVnaW9uPT1FVVJ8fHN0PT0zMHx8c3RzPT17IjEwIjoiXHUwNDIwXHUwNDRiXHUwNDNkXHUwNDNlXHUwNDNhIiwiMjAiOiIyMDE4IFx1MDQxNVx1MDQxMlx1MDQyMFx1MDQxZVx1MDQxZlx1MDQxMCIsIjMwIjoiMjAxOCBPUFRJTUEgSFlCUklEIDE2ICgyMDE2LSkifXx8Y2M9PUtFVVJQQTgxfHxjYXQ9PUtFVVJQQTgxNnx8UmVnaW9uMj09RUVML0VFUi98fGYyMz09QTgw">
+                      <span class="groups-parts__img">
+                          <img src="http://ci.catcar.info/kia_2017_05/_cutups/KEURPA81.png" alt="OPTIMA HYBRID 16 (2016-)" onerror="this.src='http://ci.catcar.info/kia_2017_05/_cutups/0.png'">
+                      </span>
+                      <span class="groups-parts__title">OPTIMA HYBRID 16 (2016-) [EUR]</span>
+                  </a>
+               </div>
+            <div>
+                  <a class="groups-parts__item" href="http://www.catcar.info/kia/?lang=en&l=eWVhcj09MjAxOHx8cmVnaW9uPT1FVVJ8fHN0PT0zMHx8c3RzPT17IjEwIjoiXHUwNDIwXHUwNDRiXHUwNDNkXHUwNDNlXHUwNDNhIiwiMjAiOiIyMDE4IFx1MDQxNVx1MDQxMlx1MDQyMFx1MDQxZVx1MDQxZlx1MDQxMCIsIjMwIjoiMjAxOCBQSUNBTlRPIDE3ICgyMDE3LSkifXx8Y2M9PUtFVVJQRzYxfHxjYXQ9PUtFVVJQRzYxN3x8UmVnaW9uMj09RUVML0VFUi98fGYyMz09RzYw">
+                      <span class="groups-parts__img">
+                          <img src="http://ci.catcar.info/kia_2017_05/_cutups/KEURPG61.png" alt="PICANTO 17 (2017-)" onerror="this.src='http://ci.catcar.info/kia_2017_05/_cutups/0.png'">
+                      </span>
+                      <span class="groups-parts__title">PICANTO 17 (2017-) [EUR]</span>
+                  </a>
+               </div>
+            <div>
+                  <a class="groups-parts__item" href="http://www.catcar.info/kia/?lang=en&l=eWVhcj09MjAxOHx8cmVnaW9uPT1FVVJ8fHN0PT0zMHx8c3RzPT17IjEwIjoiXHUwNDIwXHUwNDRiXHUwNDNkXHUwNDNlXHUwNDNhIiwiMjAiOiIyMDE4IFx1MDQxNVx1MDQxMlx1MDQyMFx1MDQxZVx1MDQxZlx1MDQxMCIsIjMwIjoiMjAxOCBSSU8gMTcgKE1FWElDTyBQTEFOVCAtIEVVUikgKDIwMTctKSJ9fHxjYz09TUVVUlBIOTF8fGNhdD09TUVVUlBIOTE3fHxSZWdpb24yPT1FRUwvfHxmMjM9PUg5MA%3D%3D">
+                      <span class="groups-parts__img">
+                          <img src="http://ci.catcar.info/kia_2017_05/_cutups/MEURPH91.png" alt="RIO 17 (MEXICO PLANT - EUR) (2017-)" onerror="this.src='http://ci.catcar.info/kia_2017_05/_cutups/0.png'">
+                      </span>
+                      <span class="groups-parts__title">RIO 17 (MEXICO PLANT - EUR) (2017-) [EUR]</span>
+                  </a>
+               </div>
+            <div>
+                  <a class="groups-parts__item" href="http://www.catcar.info/kia/?lang=en&l=eWVhcj09MjAxOHx8cmVnaW9uPT1FVVJ8fHN0PT0zMHx8c3RzPT17IjEwIjoiXHUwNDIwXHUwNDRiXHUwNDNkXHUwNDNlXHUwNDNhIiwiMjAiOiIyMDE4IFx1MDQxNVx1MDQxMlx1MDQyMFx1MDQxZVx1MDQxZlx1MDQxMCIsIjMwIjoiMjAxOCBTT1VMIEVWIDE0ICgyMDE0LSkifXx8Y2M9PUtFVVJQRTQxfHxjYXQ9PUtFVVJQRTQxNHx8UmVnaW9uMj09RUVML0VFUi98fGYyMz09RTQw">
+                      <span class="groups-parts__img">
+                          <img src="http://ci.catcar.info/kia_2017_05/_cutups/KEURPE41.png" alt="SOUL EV 14 (2014-)" onerror="this.src='http://ci.catcar.info/kia_2017_05/_cutups/0.png'">
+                      </span>
+                      <span class="groups-parts__title">SOUL EV 14 (2014-) [EUR]</span>
+                  </a>
+               </div>
+            </div>
+    </div>
+
+</div><!--рекламу не убирать. она не работает только в РФ. ее можно посмотреть если зайти на сайт через VPN-->
+<div class="promo-area">
+    <div class="promo-area__item">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- banner_full -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:728px;height:90px"
+             data-ad-client="ca-pub-7816917914461606"
+             data-ad-slot="1106141957"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+</div>
+</div>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="/js/jquery.resizeImageCoords.js"></script>
+<script src="/js/script.js?v=2.0"></script>
+<script src="/js/window.inner.js"></script>
+<script type="text/javascript" src="/js/promo.header.js"></script>
+
+<div class="footer">
+	<div class="footer-inner">
+		<a href="https://www.catcar.info/en/" class="copyright">2026 CATCAR.INFO</a>
+	</div>
+</div>
+</body>
+</html>

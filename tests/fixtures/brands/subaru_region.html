@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1024" />
+	<title>Europe (LHD) - Catcar.info</title>
+    <link href="/css/promo.css" rel="stylesheet">
+	<link href="/css/font.css" rel="stylesheet">
+	<link href="/css/main.css" rel="stylesheet">
+	<link href="/css/form.css" rel="stylesheet">
+    <link href="/css/b24-form.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/promo.header.css" type="text/css" media="screen, projection" />
+</head>
+<body><div class="modal" id="msg-form">
+	<div class="msg-form">
+		<input type="hidden" name="js_order_wrong_email" value="Wrong e-mail!">
+		<input type="hidden" name="js_order_fill_in_all_fileds" value="Please, fill all fields!">
+		<input type="hidden" name="js_order_no_checkboxes" value="Please, choose at least one checkbox!">
+		<input type="hidden" name="js_order_message_was_sent" value="Message has been successfully sent!">
+		
+		<input type="hidden" name="js_answer_success" value="Message has been successfully sent!">
+		<input type="hidden" name="js_answer_wrong_email" value="Your message was not sent. Please type another e-mail.">
+		<input type="hidden" name="js_answer_later" value="Your message was not sent. Please check your e-mail and try later.">
+		
+		<a class="close modal__close"></a>
+		<div class="loaderfeedback">
+			<img src="/_sysimg/big_catalog2/ajax-loader.gif">
+		</div>
+		<div class="success"></div>
+		<div id="feedback">
+			<div class="msg-form__title">Request to connect  catalogs</div>
+			<form action="/order.php" method="post" >
+				<div>
+					<p class="msg-form__label">Name</p>
+					<input type="text" name="name" class="user" required>
+				</div>
+				<div>
+					<p class="msg-form__label">Phone</p>
+					<input type="text" name="contact_phonenumber" class="user" required>
+				</div>
+        <input type="hidden" name="lang" value="EN">
+        <div>
+          <p class="msg-form__label">E-mail</p>
+          <input type="text" name="contact_email" class="user" required>
+        </div>
+        <input type="hidden" name="lang" value="EN">
+
+				<p class="msg-form__subtitle">Connect  catalogs</p>
+
+				<div class="msg-form__checkboxes required">
+					<label class="msg-form__checkbox">
+						<input type="checkbox" name="website" class="msg-form__checkbox">
+						<span class="msg-form__check-mark"></span>
+						<div class="msg-form__checkbox-text">to the website</div>
+					</label>
+					<label class="msg-form__checkbox">
+						<input type="checkbox" name="software" class="msg-form__checkbox">
+						<span class="msg-form__check-mark"></span>
+						<div class="msg-form__checkbox-text">to my software</div>
+					</label>
+					<label class="msg-form__checkbox">
+						<input type="checkbox" name="crm" class="msg-form__checkbox">
+						<span class="msg-form__check-mark"></span>
+						<div class="msg-form__checkbox-text">to the CRM system</div>
+					</label>
+					<label class="msg-form__checkbox">
+						<input type="checkbox" name="erp" class="msg-form__checkbox">
+						<span class="msg-form__check-mark"></span>
+						<div class="msg-form__checkbox-text">to the ERP system</div>
+					</label>
+				</div>
+
+				<div
+					class="g-recaptcha"
+					data-sitekey="6LcX208UAAAAADenrfbbrEjGgBkwVo2dT70FMn-q"
+					data-callback="GoogleCaptchaFunction"
+				>
+			</div>
+			<input class="btn msg-form__submit btn_submit_msg" type="submit" value="Submit">
+			
+			<script src='https://www.google.com/recaptcha/api.js?hl=en'></script>
+		</form>
+	</div>
+</div>
+<div class="shadow" style="display: none;"></div>
+</div>
+<div class="modal modal--info" id="info">
+	<a class="close modal__close"></a>
+    <div class="loaderfeedback">
+       <img src="/_sysimg/big_catalog2/ajax-loader.gif">
+    </div>
+	<div class="modal-content">
+
+	</div>
+</div>
+
+<div class="wrapper">
+
+	<!--Begin Шапка-->
+	<div class="header header__subaru clearfix">
+		<div class="header__left">
+			<a class="logo" href="/en/">
+				<img src="/images/logo.png">
+			</a>
+            <script data-b24-form="click/119/drxjmk" data-skip-moving="true">
+                (function(w,d,u){ var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0); var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h); })
+                (window,document,'https://b24.tradesoft.ru/upload/crm/form/loader_119_drxjmk.js');
+                window.addEventListener('b24:form:init', (event) => {
+                    let form = event.detail.object;
+                    if (form.identification.id == 119) {
+                        form.design.style = 'custom-feedback-modal';
+                    }
+                });
+            </script>
+            <button class="hide-btn">
+			    <a class="btn header__btn">Connect catalogs</a>
+            </button>
+		</div>
+
+		<div class="leftside">
+			<div class="slogan header__slogan">Subaru</div>
+			<div class="ico-row__subaru header__ico-row"></div>
+		</div><div class="rightside">
+			<div class="lang-list header__lang-list">
+				<a class="lang-list__item" href="/subaru/">
+					<i class="lang-list__ico ico-ru"></i>
+					<span class="lang-list__title">Русский</span>
+				</a>
+				<a class="lang-list__item lang-list__item--active" href="/subaru/?lang=en">
+					<i class="lang-list__ico ico-en"></i>
+					<span class="lang-list__title">English</span>
+				</a>
+			</div>
+		</div>
+        </div>
+	<!--End Шапка-->
+
+    <div class="header-fixed header-fixed--sticky">
+		<div class="header-fixed__inner">
+			<a class="logo header-fixed__logo" href="/">
+				<img src="/images/logo.png">
+			</a>
+
+			<div class="leftside slogan header-fixed__slogan">Subaru</div>
+            <script data-b24-form="click/119/drxjmk" data-skip-moving="true">
+                (function(w,d,u){ var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0); var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h); })
+                (window,document,'https://b24.tradesoft.ru/upload/crm/form/loader_119_drxjmk.js');
+                window.addEventListener('b24:form:init', (event) => {
+                    let form = event.detail.object;
+                    if (form.identification.id == 119) {
+                        form.design.style = 'custom-feedback-modal';
+                    }
+                });
+            </script>
+            <button class="hide-btn">
+			    <a class="leftside btn header-fixed__btn">Connect catalogs</a>
+            </button>
+		</div>
+	</div>
+
+	<div class="content"><div class="header_inner">
+    <div class="cat_wrapper">
+        <div class="cat_inner_wrapper cat_inner_wrapper_nobg">
+            <!--BEGIN promo-->
+            <a class="promo-animate__text">
+                <span class="promo-animate__title">Do you sell auto parts?</span>
+                <span class="promo-animate__descr">Connect auto parts catalogs to boost your sales.</span>
+            </a>
+            <script data-b24-form="click/119/drxjmk" data-skip-moving="true">
+                (function(w,d,u){ var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0); var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h); })
+                (window,document,'https://b24.tradesoft.ru/upload/crm/form/loader_119_drxjmk.js');
+            </script>
+            <a class="btn_connect_cat" href="#?utm_source=catcar&utm_medium=banner&utm_campaign=red">Connect CatCar catalogs</a>
+            <!--END promo-->
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<div class="content-inner"><h1>Model</h1>
+
+        <!--Begin Хлебные крошки-->
+        <ul class="breadcrumbs"><li class="breadcrumbs__item">
+                <a class="breadcrumbs__home" href="/en/"></a>
+            </li>
+            <li class="breadcrumbs__item">
+                <span class="breadcrumbs__sep"></span>
+                <a href="http://www.catcar.info/subaru/?lang=en&l=">Market</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <span class="breadcrumbs__sep"></span>
+                <span>Europe (LHD)</span>
+            </li>
+            </ul>
+        <!--End Хлебные крошки-->
+
+		<br />
+
+        <!--Begin Контент--><!--рекламу не убирать. она не работает только в РФ. ее можно посмотреть если зайти на сайт через VPN-->
+<div class="content-right">
+    <div class="promo-google">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- catcar_sky -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:160px;height:600px"
+             data-ad-client="ca-pub-7816917914461606"
+             data-ad-slot="4850847903"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+
+    </div>
+</div>
+<div class="content-left">
+
+            <table class="table">
+                <tr>
+                    <th class="table__th">Model</th>
+                    <th class="table__th">Production date</th>
+                    <th class="table__th">Series</th>
+                </tr><tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6IkwgU0VSSUVTIEExMCJ9fHxtb2RfaWQ9PTF8fGRpc2s9PTF8fG1jPT1BMTB8fHN0YXJ0PT0xOTg1LTA2LTAxfHxlbmQ9PTE5OTQtMDktMDE%3D">L SERIES</a></td>
+                    <td class="table__td">06/1985-09/1994</td>
+                    <td class="table__td">A10</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6IkxFR0FDWSBCMTAifXx8bW9kX2lkPT0yfHxkaXNrPT0xfHxtYz09QjEwfHxzdGFydD09MTk4OS0wNS0wMXx8ZW5kPT0xOTk0LTA5LTAx">LEGACY</a></td>
+                    <td class="table__td">05/1989-09/1994</td>
+                    <td class="table__td">B10</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6IkxFR0FDWSBCMTEifXx8bW9kX2lkPT0xfHxkaXNrPT0yfHxtYz09QjExfHxzdGFydD09MTk5My0wOC0wMXx8ZW5kPT0xOTk4LTExLTAx">LEGACY</a></td>
+                    <td class="table__td">08/1993-11/1998</td>
+                    <td class="table__td">B11</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6IkxFR0FDWSBCMTIifXx8bW9kX2lkPT0yfHxkaXNrPT0yfHxtYz09QjEyfHxzdGFydD09MTk5OC0wNC0wMXx8ZW5kPT0yMDAzLTA2LTAx">LEGACY</a></td>
+                    <td class="table__td">04/1998-06/2003</td>
+                    <td class="table__td">B12</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6IkxFR0FDWSBCMTMifXx8bW9kX2lkPT0xfHxkaXNrPT0zfHxtYz09QjEzfHxzdGFydD09MjAwMy0wNS0wMXx8ZW5kPT0yMDA5LTA1LTAx">LEGACY</a></td>
+                    <td class="table__td">05/2003-05/2009</td>
+                    <td class="table__td">B13</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6IkxFR0FDWSBCMTQifXx8bW9kX2lkPT0yfHxkaXNrPT0zfHxtYz09QjE0fHxzdGFydD09MjAwOS0wNS0wMXx8ZW5kPT0yMDE0LTExLTAx">LEGACY</a></td>
+                    <td class="table__td">05/2009-11/2014</td>
+                    <td class="table__td">B14</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6IkxFR0FDWSBCMTUifXx8bW9kX2lkPT0xfHxkaXNrPT00fHxtYz09QjE1fHxzdGFydD09MjAxNC0wOC0wMXx8ZW5kPT0%3D">LEGACY</a></td>
+                    <td class="table__td">08/2014-</td>
+                    <td class="table__td">B15</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6IlNWWCBDMTEifXx8bW9kX2lkPT0zfHxkaXNrPT0xfHxtYz09QzExfHxzdGFydD09MTk5Mi0wMy0wMXx8ZW5kPT0xOTk0LTAxLTAx">SVX</a></td>
+                    <td class="table__td">03/1992-01/1994</td>
+                    <td class="table__td">C11</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6IlNWWCBDMTIifXx8bW9kX2lkPT0zfHxkaXNrPT0yfHxtYz09QzEyfHxzdGFydD09MTk5My0wOS0wMXx8ZW5kPT0xOTk2LTExLTAx">SVX</a></td>
+                    <td class="table__td">09/1993-11/1996</td>
+                    <td class="table__td">C12</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6IkUgU0VSSUVTIEQxMCJ9fHxtb2RfaWQ9PTR8fGRpc2s9PTF8fG1jPT1EMTB8fHN0YXJ0PT0xOTg2LTA2LTAxfHxlbmQ9PTE5OTQtMDctMDE%3D">E SERIES</a></td>
+                    <td class="table__td">06/1986-07/1994</td>
+                    <td class="table__td">D10</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6IkUxMiBEMTEifXx8bW9kX2lkPT00fHxkaXNrPT0yfHxtYz09RDExfHxzdGFydD09MTk5Mi0xMi0wMXx8ZW5kPT0xOTk4LTExLTAx">E12</a></td>
+                    <td class="table__td">12/1992-11/1998</td>
+                    <td class="table__td">D11</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6IklNUFJFWkEgRzEwIn18fG1vZF9pZD09NXx8ZGlzaz09Mnx8bWM9PUcxMHx8c3RhcnQ9PTE5OTItMDUtMDF8fGVuZD09MjAwMi0wMy0wMQ%3D%3D">IMPREZA</a></td>
+                    <td class="table__td">05/1992-03/2002</td>
+                    <td class="table__td">G10</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6IklNUFJFWkEgRzExIn18fG1vZF9pZD09Nnx8ZGlzaz09Mnx8bWM9PUcxMXx8c3RhcnQ9PTIwMDAtMDQtMDF8fGVuZD09MjAwNy0wNi0wMQ%3D%3D">IMPREZA</a></td>
+                    <td class="table__td">04/2000-06/2007</td>
+                    <td class="table__td">G11</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6IklNUFJFWkEoR0UsR0gpIEcxMiJ9fHxtb2RfaWQ9PTN8fGRpc2s9PTN8fG1jPT1HMTJ8fHN0YXJ0PT0yMDA3LTA2LTAxfHxlbmQ9PTIwMTEtMDktMDE%3D">IMPREZA(GE,GH)</a></td>
+                    <td class="table__td">06/2007-09/2011</td>
+                    <td class="table__td">G12</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6IklNUFJFWkEoR0opIEcxMyJ9fHxtb2RfaWQ9PTN8fGRpc2s9PTR8fG1jPT1HMTN8fHN0YXJ0PT0yMDExLTEwLTAxfHxlbmQ9PTIwMTYtMTAtMDE%3D">IMPREZA(GJ)</a></td>
+                    <td class="table__td">10/2011-10/2016</td>
+                    <td class="table__td">G13</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6IklNUFJFWkEgRzE0In18fG1vZF9pZD09Nnx8ZGlzaz09NHx8bWM9PUcxNHx8c3RhcnQ9PTIwMTYtMDktMDF8fGVuZD09">IMPREZA</a></td>
+                    <td class="table__td">09/2016-</td>
+                    <td class="table__td">G14</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6IklNUFJFWkEoR1IsR1YpIEcyMiJ9fHxtb2RfaWQ9PTR8fGRpc2s9PTN8fG1jPT1HMjJ8fHN0YXJ0PT0yMDA3LTEwLTAxfHxlbmQ9PTIwMTQtMDEtMDE%3D">IMPREZA(GR,GV)</a></td>
+                    <td class="table__td">10/2007-01/2014</td>
+                    <td class="table__td">G22</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6IklNUFJFWkEoR1AgV0dOKSBHMjMifXx8bW9kX2lkPT00fHxkaXNrPT00fHxtYz09RzIzfHxzdGFydD09MjAxMS0xMC0wMXx8ZW5kPT0yMDE2LTEwLTAx">IMPREZA(GP WGN)</a></td>
+                    <td class="table__td">10/2011-10/2016</td>
+                    <td class="table__td">G23</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6IlhWKEdUKVZJTjpKRjEsMiBHMjQifXx8bW9kX2lkPT03fHxkaXNrPT00fHxtYz09RzI0fHxzdGFydD09MjAxNy0wMy0wMXx8ZW5kPT0%3D">XV(GT)VIN:JF1,2</a></td>
+                    <td class="table__td">03/2017-</td>
+                    <td class="table__td">G24</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6IlhWKEdQKVZJTjpKRjEsMiBHMzMifXx8bW9kX2lkPT0yfHxkaXNrPT00fHxtYz09RzMzfHxzdGFydD09MjAxMS0wOC0wMXx8ZW5kPT0%3D">XV(GP)VIN:JF1,2</a></td>
+                    <td class="table__td">08/2011-</td>
+                    <td class="table__td">G33</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6IlhWKEdQKVZJTjpQTFAgRzQzIn18fG1vZF9pZD09NXx8ZGlzaz09NHx8bWM9PUc0M3x8c3RhcnQ9PTIwMTItMTEtMDF8fGVuZD09">XV(GP)VIN:PLP</a></td>
+                    <td class="table__td">11/2012-</td>
+                    <td class="table__td">G43</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6IkogU0VSSUVTIEoxMCJ9fHxtb2RfaWQ9PTV8fGRpc2s9PTF8fG1jPT1KMTB8fHN0YXJ0PT0xOTg2LTA2LTAxfHxlbmQ9PTE5OTUtMDctMDE%3D">J SERIES</a></td>
+                    <td class="table__td">06/1986-07/1995</td>
+                    <td class="table__td">J10</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6Ik03MCZNNjAgUjEwIn18fG1vZF9pZD09Nnx8ZGlzaz09MXx8bWM9PVIxMHx8c3RhcnQ9PTE5ODctMTEtMDF8fGVuZD09MTk4OS0wMy0wMQ%3D%3D">M70&M60</a></td>
+                    <td class="table__td">11/1987-03/1989</td>
+                    <td class="table__td">R10</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6Ik04MCBSMTEifXx8bW9kX2lkPT03fHxkaXNrPT0xfHxtYz09UjExfHxzdGFydD09MTk4OS0wNC0wMXx8ZW5kPT0xOTkyLTAyLTAx">M80</a></td>
+                    <td class="table__td">04/1989-02/1992</td>
+                    <td class="table__td">R11</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6IlZJVklPIFIxMiJ9fHxtb2RfaWQ9PTh8fGRpc2s9PTF8fG1jPT1SMTJ8fHN0YXJ0PT0xOTkyLTA4LTAxfHxlbmQ9PTE5OTMtMDctMDE%3D">VIVIO</a></td>
+                    <td class="table__td">08/1992-07/1993</td>
+                    <td class="table__td">R12</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6IlZJVklPIFIxMyJ9fHxtb2RfaWQ9PTd8fGRpc2s9PTJ8fG1jPT1SMTN8fHN0YXJ0PT0xOTkzLTA0LTAxfHxlbmQ9PTIwMDAtMDUtMDE%3D">VIVIO</a></td>
+                    <td class="table__td">04/1993-05/2000</td>
+                    <td class="table__td">R13</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6IkZPUkVTVEVSIFMxMCJ9fHxtb2RfaWQ9PTh8fGRpc2s9PTJ8fG1jPT1TMTB8fHN0YXJ0PT0xOTk3LTAxLTAxfHxlbmQ9PTIwMDItMDUtMDE%3D">FORESTER</a></td>
+                    <td class="table__td">01/1997-05/2002</td>
+                    <td class="table__td">S10</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6IkZPUkVTVEVSIFMxMSJ9fHxtb2RfaWQ9PTl8fGRpc2s9PTJ8fG1jPT1TMTF8fHN0YXJ0PT0yMDAyLTAyLTAxfHxlbmQ9PTIwMDctMTEtMDE%3D">FORESTER</a></td>
+                    <td class="table__td">02/2002-11/2007</td>
+                    <td class="table__td">S11</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6IkZPUkVTVEVSIFMxMiJ9fHxtb2RfaWQ9PTV8fGRpc2s9PTN8fG1jPT1TMTJ8fHN0YXJ0PT0yMDA3LTEyLTAxfHxlbmQ9PTIwMTItMTAtMDE%3D">FORESTER</a></td>
+                    <td class="table__td">12/2007-10/2012</td>
+                    <td class="table__td">S12</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6IkZPUkVTVEVSKEpGMSwyKSBTMTMifXx8bW9kX2lkPT04fHxkaXNrPT00fHxtYz09UzEzfHxzdGFydD09MjAxMi0wOC0wMXx8ZW5kPT0%3D">FORESTER(JF1,2)</a></td>
+                    <td class="table__td">08/2012-</td>
+                    <td class="table__td">S13</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6IkZPUkVTVEVSKFBMUCkgUzIzIn18fG1vZF9pZD09OXx8ZGlzaz09NHx8bWM9PVMyM3x8c3RhcnQ9PTIwMTUtMTItMDF8fGVuZD09">FORESTER(PLP)</a></td>
+                    <td class="table__td">12/2015-</td>
+                    <td class="table__td">S23</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6IldSWFwvTEVWT1JHIFYxMCJ9fHxtb2RfaWQ9PTEwfHxkaXNrPT00fHxtYz09VjEwfHxzdGFydD09MjAxMy0xMi0wMXx8ZW5kPT0%3D">WRX/LEVORG</a></td>
+                    <td class="table__td">12/2013-</td>
+                    <td class="table__td">V10</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6IlRSSUJFQ0EgVzEwIn18fG1vZF9pZD09Nnx8ZGlzaz09M3x8bWM9PVcxMHx8c3RhcnQ9PTIwMDYtMDMtMDF8fGVuZD09MjAxNC0wMS0wMQ%3D%3D">TRIBECA</a></td>
+                    <td class="table__td">03/2006-01/2014</td>
+                    <td class="table__td">W10</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6IkVYSUdBIFkxMCJ9fHxtb2RfaWQ9PTd8fGRpc2s9PTN8fG1jPT1ZMTB8fHN0YXJ0PT0yMDA5LTA3LTAxfHxlbmQ9PTIwMTQtMDktMDE%3D">EXIGA</a></td>
+                    <td class="table__td">07/2009-09/2014</td>
+                    <td class="table__td">Y10</td>
+                </tr>
+                <tr>
+                    <td class="table__td"><a href="http://www.catcar.info/subaru/?lang=en&l=cmVnaW9uPT1saGR8fHN0PT0zMHx8c3RzPT17IjEwIjoiTWFya2V0IiwiMjAiOiJFdXJvcGUgKExIRCkiLCIzMCI6IkJSWiBaMTAifXx8bW9kX2lkPT0xMXx8ZGlzaz09NHx8bWM9PVoxMHx8c3RhcnQ9PTIwMTEtMTItMDF8fGVuZD09">BRZ</a></td>
+                    <td class="table__td">12/2011-</td>
+                    <td class="table__td">Z10</td>
+                </tr>
+                </table>
+
+        </div>
+</div><!--рекламу не убирать. она не работает только в РФ. ее можно посмотреть если зайти на сайт через VPN-->
+<div class="promo-area">
+    <div class="promo-area__item">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- banner_full -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:728px;height:90px"
+             data-ad-client="ca-pub-7816917914461606"
+             data-ad-slot="1106141957"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+</div>
+</div>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+<script src="/js/jquery.resizeImageCoords.js"></script>
+<script src="/js/script.js?v=2.0"></script>
+<script src="/js/window.inner.js"></script>
+<script type="text/javascript" src="/js/promo.header.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+<script type="text/javascript">
+  jQuery('select').select2().on("select2:select", function (e) {
+    window.location.href = jQuery(e.currentTarget).val();
+  });
+  jQuery('select').select2({
+    minimumResultsForSearch:Infinity
+  });
+</script>
+
+<div class="footer">
+	<div class="footer-inner">
+		<a href="https://www.catcar.info/en/" class="copyright">2026 CATCAR.INFO</a>
+	</div>
+</div>
+</body>
+</html>
