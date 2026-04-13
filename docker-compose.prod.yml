@@ -86,6 +86,29 @@ services:
     profiles:
       - crawl-http
 
+  crawler-brands:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.crawler-http
+    command: ["python", "run_crawl_brands.py"]
+    env_file: .env
+    environment:
+      DATABASE_URL: ${DATABASE_URL}
+      CRAWL_MIN_DELAY: ${CRAWL_HTTP_MIN_DELAY:-0.5}
+      CRAWL_MAX_DELAY: ${CRAWL_HTTP_MAX_DELAY:-1.0}
+      DB_POOL_SIZE: "2"
+      DB_MAX_OVERFLOW: "1"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 128M
+    profiles:
+      - crawl-brands
+
   postgres:
     image: postgres:16-alpine
     environment:

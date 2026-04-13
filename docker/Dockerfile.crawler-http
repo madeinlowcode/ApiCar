@@ -13,5 +13,6 @@ RUN pip install --no-cache-dir ".[crawler-http]"
 COPY shared/ ./shared/
 COPY crawler/ ./crawler/
 COPY run_crawl_http.py .
+COPY run_crawl_brands.py .
 
 CMD ["python", "run_crawl_http.py"]
